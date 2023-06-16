@@ -1,0 +1,344 @@
+@charset "utf-8";
+    body{
+        margin: 0;
+        font-family: 'Noto Sans KR',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+        word-break: keep-all;
+        
+    }
+    ul{
+        margin: 0; padding: 0;
+    }
+    li{
+        margin: 0;
+        list-style: none;
+    }
+    header{
+        position: relative;
+    }
+    header .head_line{
+        display: none;
+    }
+    header .head{
+        width: 90%;
+        position: fixed;
+        top:20px; left: 0; right: 0;
+        margin: auto;
+        z-index: 9999;
+       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50vw;
+        
+    }
+    header .head img:nth-child(1){
+        width: 22.4vw;/*84px*/
+    }
+    header .head img:nth-child(2){
+        width: 6.4vw;/*24px*/
+    }
+    
+    main{
+        margin: auto;
+    }
+    main .subject{
+        margin: auto;
+        position: relative;
+       
+    }
+    main .subject img{
+        width: 100%;
+    }
+    main .subject .txt{
+        position: absolute;
+        left:50%; top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 999;
+        color: white;
+    }
+
+    main .subject .txt h1{
+        font-size: 6.4000vw;   /*24px*/
+        text-align: center;
+        margin-bottom: 1.0667px; /*4px*/
+    }
+
+    main .subject .txt h3{
+        font-size: 3.7333vw;/*14px*/
+        text-align: center;
+        margin-top: 1.8667vw; /*7px*/
+    }
+    main .subject .txt h3 span{
+        display: block;
+    }
+
+    main .our-business ul li:nth-child(1){
+        margin: 12vw 8vw;/*45px 30px*/
+    }
+  
+    main .our-business{
+        position: relative;
+        margin: auto;
+    }
+    main .our-business .txt{
+        margin: auto;
+    }
+    main .our-business ul{
+        margin: auto;
+    }
+    main .our-business ul li{
+        margin: auto;
+        margin-bottom: 21.3333vw; /*80px;*/
+    }
+    main .our-business ul li img{
+        width: 90vw;
+        object-fit: cover;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+    }
+
+    main .our-business ul li h1{
+        width: 35.7143vw;
+        text-transform: uppercase;
+        font-size: 8.5333vw;/*32px*/
+        margin-bottom: 1.7857vw;
+        line-height: 9.6000vw; /*36px*/
+    }
+    main .our-business ul li h3{
+        margin-top: 1.7857vw;/*7px*/
+        font-size: 4.2667vw;
+        font-weight: 500;
+    }
+    main .our-business ul li .txt{
+        margin: 8vw 1.3333vw 2.6667vw 8vw; /*30px 10px 20px 30px*/
+        width: 60%;
+    }
+   
+    main .our-business ul li .txt h4{
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 3.4667vw;
+        color: #444444;
+    }
+    main .our-business ul li .txt p{
+        margin-top: 1.0667vw;
+        margin-bottom: 1.0667vw;
+        font-size: 4.2667vw;
+    }
+   
+    main .our-business ul li:nth-child(7) .txt p{
+        width: 69.3333vw; /*260px*/
+    }
+    main .our-business ul li:nth-child(8) .txt p{
+        width: 64vw; /*240px*/
+    }
+    main .our-business ul li:nth-child(10) .txt p{
+        width: 64vw; /*240px*/
+       
+    }
+
+    main .story {
+        font-size: 8.5333vw;
+        margin: 40vw auto;/*150px*/
+    }
+    main .story h1{
+        font-size: 8.5333vw;/*24px*/
+        margin: 7.1429vw; /*20px*/
+        text-transform: uppercase;
+    }
+    main .story .slide{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap:3.5714vw;
+        overflow: hidden;
+    }
+
+    main .story img{
+        width: 44vw; /*165px*/
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    main .summit_life{
+        height: 66.6667vw;/*250px*/
+        background-image: url(./images/creation.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40vw auto;/*150px*/
+    }
+    main .summit_life .txt h1{
+        margin: 12.6667px; /*20px*/
+        font-size: 8.5333vw;/*32px*/
+        text-align: center;
+        color: white;
+    }
+    main .summit_life .txt p{
+        width: 64vw; /*240px*/
+        text-align: center;
+        margin: auto;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 3.7333vw /*14px*/
+    }
+    main .summit_life button{
+        background-color: white;
+        border: none;
+        width: 32vw; /*120px */
+        height: 8.5333vw; /*32px*/
+        border-radius: 50px;
+    }
+    main .summit_life button a{
+        color: #585858;
+        font-size: 3.7333vw; /*14px;*/
+        text-decoration: none;
+        font-weight: 700;
+    }
+    main .news{
+        margin: 40vw 7.1429vw; /* 150px 20px*/
+    }
+    main .news .title{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+    main .news .title img{
+        width: 8.5333vw/*30px;*/
+    }
+    main .news ul li{
+        margin: auto;
+    }
+    main .news h1{
+       
+        font-size: 8.5333vw; /*32px*/
+    }
+    main .news ul{
+        margin: auto;
+    }
+    main .news ul li{
+        margin-bottom: 16vw; /*60px;*/
+    }
+    main .news ul li .date{
+        color: #EE7500;
+        font-weight: 700;
+    }
+    main .news ul li p{
+        width: 74.6667vw; /*280px;*/ 
+        font-size: 4.2667vw; /*16px*/
+        margin: 5.3333vw auto; /*20px*/
+    }
+    
+    main .news ul li .more p{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        font-size: 3.7333vw; /*14px*/
+        
+    }
+    main .news ul li .more p span{
+        margin-left: 15px;
+        font-size: 3.7333vw;/*14px*/
+        font-weight: bold;
+        background-color: #D9D9D9;
+        width: 4.8vw; /*18px*/
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    main .future{
+        height: 64vw;/*240px*/
+        background-image: url(./images/future.png);
+        background-position: right;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin: 20vw auto;/*75px*/
+    }
+    main .future h1{
+        font-size: 20px; /*20px*/
+        width: 300px;
+        text-align: center;
+        margin: 5.3333vw auto;/*20px*/
+    }
+
+    main .future button{
+        background-color: white;
+        border: none;
+        width: 32vw; /*120px */
+        height: 8.5333vw; /*32px*/
+        border-radius: 50px;
+    }
+    main .future button a{
+        color: #585858;
+        font-size: 3.7333vw; /*14px;*/
+        text-decoration: none;
+        font-weight: 700;
+    }
+    footer .connection{
+        margin: 18.6667vw 0 13.3333vw ; /*70vw 50vw*/
+    }
+    
+    footer .connection ul{
+        margin: auto;
+    }
+    footer .connection ul li{
+        padding: 4.2667vw;/*16px;*/
+        border-bottom: solid 2px #D9D9D9;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 4.2667vw/*16px;*/
+    }
+    footer .connection ul li span{
+        color: #D9D9D9;
+        font-size: 5.3333vw/*20px;*/
+    }
+    footer .guide{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 35px;
+        font-size: 3.7333vw;/*14px;*/
+        color: #797979;
+    }
+    footer .guide ul li{
+        padding: 2.6667vw; /*10px;*/
+    }
+
+    footer .guide_line{
+        display: none;
+    }
+    footer .foot{
+        text-align: center;
+    }
+    footer .foot button{
+        border: solid 1px black;
+        background-color: transparent;
+        
+        width: 69.3333vw;
+        height: 13.3333vw;
+        
+    }
+    footer .foot button a{
+        color: #585858;
+        font-size: 3.7333vw; /*14px;*/
+        text-decoration: none;
+        font-weight: 700;
+    }
+    footer .foot p{
+        margin: 5.3333vw;
+        text-align: center;
+        font-size: 3.7333vw; /*14px;*/
+    }

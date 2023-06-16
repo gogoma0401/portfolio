@@ -1,0 +1,203 @@
+@charset "utf-8";
+header .head{
+    display: none;
+}
+header{
+    width: 100%;
+}
+header .head_line{
+    width: 100%;
+   display: flex;
+   flex-direction: row;
+   z-index: 999;
+   position: fixed;
+   justify-content: space-between;
+   align-items: center;
+   
+}
+header .head_line ul{
+   
+    
+   
+}
+header .head_line img{
+    width: 140px;
+
+}
+header .head_line a{
+    text-decoration: none;
+    color: white;
+}
+header .head_line ul li:nth-child(6){
+    margin-left: 40px;
+    display: flex;
+    color: #8E8E8E;
+}
+header .head_line ul li:nth-child(6) span{
+    margin-left: 8px;
+    background-color: #EEEEEE;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+main .summit_life{
+    display: flex;
+    
+   
+}
+main .subject .txt{
+    left:30%; top: 50%;
+}
+
+main .subject .txt h1{
+    text-align: left;
+    font-size: 64px;
+    margin-bottom: 20px;
+   
+}
+main .subject .txt h3{
+    text-align: left;
+    margin: 0;
+    width: 300px;
+    font-size: 24px;
+}
+main .our-business{
+    width: 100%;
+    margin: auto;
+    
+}
+main .our-business ul{
+    height: 2900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px;
+  }
+  main .our-business ul li{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  main .our-business ul li:nth-child(1){
+    margin-left: 70px;
+  }
+  main .our-business ul li:nth-child(1) h1{
+    font-size: 48px;
+  }
+  main .our-business ul li:nth-child(1) h3{
+    font-size: 24px;
+  }
+  main .our-business ul li img{
+    max-width: 480px;
+    min-width: 430px;
+  }
+
+main .our-business ul li .txt{
+    margin: 0;
+}
+main .our-business ul li .txt h4{
+    font-size: 18px;
+}
+main .our-business ul li .txt p{
+    font-size: 24px;
+}
+
+main .story h1{
+    font-size: 48px;
+    margin-left: 140px;
+    text-transform: uppercase;
+}
+main .story .slide{
+    place-items: center;
+}
+main .story img{
+    width: 300px;
+}
+
+main .summit_life{
+   width: 78%;
+   object-fit: cover;
+}
+
+main .news .title h1{
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+main .news .title img{
+    width: 48px;
+    margin-top: 10px;
+}
+main .news{
+    margin: 30px;
+}
+main .news .title h1{
+    text-transform: uppercase;
+    margin-left: 110px;
+}
+main .news ul{
+    justify-content: space-around;
+}
+main .news ul li{
+    width: 25%; 
+}
+main .news ul li p span{
+    display: block;
+}
+main .news ul li p{
+    margin: 20px auto;
+}
+main .future{
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: centers;
+}
+main .future h1{
+    text-align: left;
+    font-size: 36px;
+}
+main .future h1 span{
+    display: block;
+}
+footer .connection{
+    display: none;
+}
+footer .guide{
+    display: none;
+}
+footer .guide_line{
+    display: block;
+    margin: 100px;
+}
+
+footer .guide_line ul>li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 40px;
+   
+}
+footer .guide_line ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+}
+
+footer .guide_line ul li ul{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+
