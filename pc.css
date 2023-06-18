@@ -4,19 +4,22 @@ header .head{
 }
 header{
     width: 100%;
+    height: 80px;
     position: fixed;
-    top: 40px; left: 0; right: 0;
+    top: 0; left: 0; right: 0;
     margin: auto;
     z-index: 999;
 }
 header .head_line{
+    height: 100%;
+    line-height: 80px;
     display: flex;
     flex-direction: row;
     z-index: 999;
    
     justify-content: space-around;
     align-items: center;
-   
+  
 }
 header .head_line ul{
     display: flex;
@@ -32,7 +35,12 @@ header .head_line img{
 }
 header .head_line a{
     text-decoration: none;
+    font-weight: 500;
     color: white;
+}
+
+header .head_line ul li:hover a{
+  color: #444444;
 }
 header .head_line ul li:nth-child(6){
     margin-left: 40px;
@@ -53,13 +61,16 @@ header .head_line ul li:nth-child(6) span{
     font-size: 18px;
     font-weight: bold;
 }
-
-
-main .summit_life{
-    display: flex;
+main .subject{
+  margin-bottom: 60px;
 }
+
 main .subject .txt{
-    left:22%; top: 50%;
+  position: absolute;
+  left:24%; top: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  color: white;
 }
 
 main .subject .txt h1{
@@ -74,45 +85,37 @@ main .subject .txt h3{
     width: 300px;
     font-size: 24px;
 }
-main .our-business{
-    width: 100%;
-    margin: auto;
-    
+main .subject .page_number{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 95%; left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  font-size: 22px;
+  color: white;
+  gap: 70px;
 }
 
-main .our-business{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -7.8125vw;/*-60px*/
-  }
-  main .our-business .line{
-    margin-top: 0;/*10px*/
-    width: 50%;
-  }
+main .subject .page_number span{
+  font-size: 20px;
+}
+main .subject .page_number span:nth-child(1){
+  transform: rotate(180deg);
   
-  main .our-business ul li{
-    margin-bottom: 16.9271vw;/*130px*/
-  }
-  main .our-business ul li:nth-child(1){
-    text-align: left;
-    margin-top: 0;
-   
-  }
+}
+
   main .our-business ul li h1{
     width: 16.4063vw; /*2*10px*/
     font-weight: 700;
     font-size: 4.5313vw;/*58px*/
-    margin: 0;
-    margin-bottom: 1.7857vw;
+  
     line-height: 1.3021; /*10px*/
+   
   }
   main .our-business ul li h3{
-    margin: 0;
-    margin-top: 1.7857vw;/*7px*/
     font-size: 2.5vw;/*32px*/
   }
   main .our-business ul li h3 span{
@@ -156,31 +159,64 @@ main .our-business{
   }
   
   main .our-business ul li img{
-    width: 31.2500vw; /*320x*/
+    width: 39.0625vw; /*300x*/
     object-fit: cover;
     border-radius: 20px;
     display: block;
     margin: auto;
   }
-  
-main .story {
+    
+  main .story {
     margin: 15.6250vw auto;/*120px*/
-  }
-main .story h1{
+    position: relative;
+    }
+  main .story h1{
     font-size: 4.5313vw;/*58px*/
     margin: 7.1429vw; /*20px*/
+    }
+  main .story .slide .part1{
+    animation: slide_ani1 40s linear infinite;
+    position: relative;
+    overflow: visible;
   }
-main .story .slide{
-    grid-gap: 1.9531vw; /*15px*/
+  main .story .slide .part2{
+    animation: slide_ani2 40s linear infinite;
+    overflow: visible;
+  }
+ 
+  @keyframes slide_ani1 {
+    0% {
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(-50%);
+    }
+    
+    100% {
+      transform: translateX(-100%);
+    }
   }
   
-main .story img{
+  @keyframes slide_ani2 {
+    0% {
+      transform: translateX(0);
+    }
+    50%{
+      transform: translateX(50%);
+    }
+    
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  main .story img{
     width: 15.6250vw;/*200*/
   }  
 
   main .summit_life{
     width: 85%; /*670px;*/
-    height: 32.8125vw; /*420px*/
+    height: 27.3438vw; /*350px*/
     border-radius: 0px;
     display: flex;
     flex-direction: column;
@@ -188,74 +224,104 @@ main .story img{
     align-items: flex-start;
     border-radius: 50px;
 
+    margin: 23.4375vw auto;/*300*/
+
   }
-  
+ 
   main .summit_life .txt h1{
     margin: 0; /*20px*/
     margin-bottom: 0.7813vw;/*7\10px*/
-    font-size: 4.5313vw;/*58px*/
+    
     text-align: left;
     color: white;
     margin-left: 5.4688vw;/*70px;*/
-    
+    font-size: 3.7500vw;/*48px*/
     
 
   }
   main .summit_life .txt p{
-    width: 52.0833vw; /*400*/
+    width: 31.2500vw; /*400*/
     text-align: left;
     color: white;
     margin-bottom: 3.1250vw; /*40px*/
-    font-size:1.8750vw; /*24x*/
+    font-size: 1.7188vw; /*22x*/
     margin-left: 5.4688vw;/*70px;*/
   }
   main .summit_life button{
     background-color: white;
     border: none;
     width: 17.9688vw; /*230px */
-    height: 3.5156vw; /*45px*/
+    height: 4.2969vw; /*55px*/
     border-radius: 50px;
     margin-left: 5.4688vw;/*70px;*/
     
   }
   main .summit_life button a{
     color: #585858;
-    font-size: 1.7188vw; /*22x*/
+    font-size: 1.5625vw; /*20x*/
     text-decoration: none;
     font-weight: 700;
   }
-  main .news{
+ 
+  main .news .title{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  } 
+    align-items: center;
+    justify-content: space-between;
+   }
 main .news .title h1{
     font-size: 48px;
-    margin-left: 50px;
+    margin-left: 55px;
 }
 
 main .news .title img{
     width: 48px;
     margin-top: 10px;
+    margin-right: 70px;
 }
 main .news{
     margin: 30px;
 }
 main .news .title h1{
     text-transform: uppercase;
-    margin-left: 110px;
+    margin-left: 5.4688vw;/*70px;*/
+    font-size: 3.7500vw;/*48px*/
 }
 main .news ul{
-    justify-content: space-around;
+    justify-content:center;
+    align-items: center;
 }
 main .news ul li{
-    width: 25%; 
+    width: 30.3333%; 
 }
 main .news ul li p span{
     display: block;
 }
+main .news ul li:nth-child(3) p span{
+  display: inline;
+}
 main .news ul li p{
-    margin: 20px auto;
+    margin: 40px auto 40px;
+    font-size: 1.7188vw; /*22x*/
+}
+
+main .news ul li .more p{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.7188vw; /*22x*/
+}
+
+main .news ul li .more p span{
+  margin-left: 15px;
+  font-size: 18px; /*16px*/
+  font-weight: bold;
+  background-color: #D9D9D9;
+  width:  26px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 main .future{
     background-size: cover;
@@ -263,10 +329,27 @@ main .future{
     flex-direction: row;
     justify-content: center;
     align-items: centers;
+    height: 29.6875vw;
 }
 main .future h1{
+    margin: 0;
     text-align: left;
-    font-size: 36px;
+    font-size: 2.5000vw;
+    line-height: 3.9063vw /*50px;*/
+}
+main .future button{
+  background-color: white;
+  border: none;
+  width: 17.9688vw; /*230px */
+  height: 4.2969vw; /*55px*/
+  border-radius: 50px;
+
+}
+main .future button a{
+  color: #585858;
+  font-size: 1.5625vw; /*20x*/
+
+  font-weight: 700;
 }
 main .future h1 span{
     display: block;
@@ -302,6 +385,22 @@ footer .guide_line ul li ul{
     display: flex;
     flex-direction: column;
     gap:20px;
+}
+
+footer .foot button{
+  border: solid 1px black;
+  background-color: transparent;
+  
+  width: 42.9688vw; /*550px*/
+  height: 8.4635vw; /*65*/
+  
+}
+
+footer .foot button a{
+  font-size: 2.1875vw; /*28px*/
+}
+footer .foot p{
+  font-size: 2.1875vw; /*28px*/
 }
 
 

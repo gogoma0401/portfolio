@@ -1,4 +1,13 @@
 @charset "utf-8";
+header .head img:nth-child(1){
+  width: 130px;
+}
+header .head img:nth-child(2){
+  width: 36px;
+}
+main .subject{
+  margin-bottom: 13.0208vw/*100px;*/
+}
 main .subject .txt{
   position: absolute;
   left:26%; top: 50%;
@@ -7,42 +16,35 @@ main .subject .txt{
   color: white;
 }
 main .subject .txt h1{
+  font-size: 5.4688vw; /*42px*/
   text-align: left;
 }
 main .subject .txt h3{
+  font-size: 3.3854vw; /*26px*/
   text-align: left;
 }
 main .our-business{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  
-  justify-content: space-around;
   align-items: center;
-  margin-top: -7.8125vw;/*-60px*/
+  justify-content: center;
 }
 main .our-business .line{
-  margin-top: 0;/*10px*/
   width: 50%;
 }
-
-main .our-business ul li{
-  margin-bottom: 16.9271vw;/*130px*/
-}
-main .our-business ul li:nth-child(1){
-  text-align: left;
-  margin-top: 0;
- 
+main .our-business .line li h1{
+  margin-top: -26.0417vw; /*200px*/
 }
 main .our-business ul li h1{
   width: 35.7143vw;
-  font-size: 6.5104vw;/*50px*/
-  margin: 0;
+  font-size: 6.2500vw;/*48px*/
+ 
   margin-bottom: 1.7857vw;
   line-height: 1.3021; /*10px*/
 }
 main .our-business ul li h3{
-  margin: 0;
+ 
   margin-top: 1.7857vw;/*7px*/
   font-size: 3.1250vw;/*24px*/
 }
@@ -54,35 +56,16 @@ main .our-business ul li .txt{
   width: 60%;
 }
 
-main .our-business ul li .txt h4{
+main .our-business .line li .txt h4{
   margin: auto;
   margin-bottom: 0;
   font-weight: 500;
   font-size: 1.8229vw;/*14*/
   color: #444444;
 }
-main .our-business ul li .txt p{
+main .our-business .line li .txt p{
   margin: 0.6510vw 0 0.9115vw 0;/*5px 7px*/
   font-size: 2.0833vw;/*16*/
-}
-main .our-business .line2 ul{
-  margin-top: 39.0625vw; /*300px*/
-}
-main .our-business .line2 ul li:nth-child(1){
-  margin: auto;
-  margin-bottom: 16.9271vw;/*130px*/
-}
-main .our-business .line2 ul li:nth-child(1) .txt p span{
- display: inline;
-}
-main .our-business .line2 ul li:nth-child(2) .txt p{
-  width: 33.8542;
-}
-main .our-business ul li:nth-child(8) .txt p span{
-  display: block;
-}
-main .our-business ul li:nth-child(10) .txt p span{
-  display: block;
 }
 
 main .our-business ul li img{
@@ -92,6 +75,16 @@ main .our-business ul li img{
   display: block;
   margin: auto;
 }
+main .our-business .line2 li:nth-child(1) .txt h4{
+  margin-top: 26.0417vw; /*200px*/
+}
+main .our-business .line2 li:nth-child(1) .txt p{
+  width: 35.1563vw; /*270px;*/
+}
+main .our-business .line2 li:nth-child(1) .txt p span{
+  display: block;
+}
+
 
 main .story {
   margin: 15.6250vw auto;/*120px*/
@@ -99,9 +92,6 @@ main .story {
 main .story h1{
   font-size: 6.5104vw;/*50px*/
   margin: 7.1429vw; /*20px*/
-}
-main .story .slide{
-  grid-gap: 1.9531vw; /*15px*/
 }
 
 main .story img{
@@ -112,6 +102,7 @@ main .summit_life{
   width: 87.2396vw; /*670px;*/
   height: 44.5313vw; /*342px*/
   border-radius: 50px;
+  margin: 32.5521vw auto;/*250px 200px*/
 }
 
 main .summit_life .txt h1{
@@ -154,7 +145,7 @@ main .news .title img{
 }
 
 main .news ul li{
-  margin: 0
+  margin: 0.2604vw;
 }
 main .news h1{
   font-size: 6.5104vw;/*50px*/
@@ -204,16 +195,17 @@ main .news ul li .more p span{
   justify-content: center;
 }
 main .future{
-  margin-top: 0;
+  margin:0 auto;
   height: 46.8750vw;/*360px*/
-
+  justify-content: center;
+  gap: 4.6875vw; /*36*/
 }
 main .future h1{
   font-size: 3.6458vw;/*28px*/
   line-height: 5.3vw;/*41px*/
   width: 52.0833vw;
   text-align: center;
-  margin: 4.5573vw auto;/*20px*/
+  margin: 0 auto;/*20px*/
 }
 
 main .future button{
