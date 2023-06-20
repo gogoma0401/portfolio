@@ -124,13 +124,12 @@ main .summit_life button{
   width: 26.0417vw; /*200px */
   height: 7.1615vw; /*55px*/
   border-radius: 50px;
-}
-main .summit_life button a{
   color: #585858;
   font-size: 2.8646vw; /*22px*/
   text-decoration: none;
   font-weight: 700;
 }
+
 
 main .news{
   margin: 9.7656vw 7.1429vw; /* 75px 20px*/
@@ -214,8 +213,6 @@ main .future button{
   width: 26.0417vw; /*200px */
   height: 7.1615vw; /*55px*/
   border-radius: 50px;
-}
-main .future button a{
   color: #585858;
   font-size: 2.8646vw; /*22px*/
   text-decoration: none;
@@ -253,14 +250,13 @@ footer .foot button{
   
   width: 55.9896vw; /*430px*/
   height: 8.4635vw; /*65*/
-  
-}
-footer .foot button a{
   color: #585858;
   font-size: 2.8646vw; /*22px*/
   text-decoration: none;
   font-weight: 700;
+  
 }
+
 footer .foot p{
   margin: 5.3333vw;
   text-align: center;

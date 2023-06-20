@@ -97,6 +97,11 @@
         border-radius: 20px;
         display: block;
         margin: auto;
+        transition: transform 0.6s ease;
+    }
+    main .our-business ul li img:hover{
+        transform: scale(1.05);
+        filter: brightness(110%);
     }
     
     main .our-business ul li h1{
@@ -134,31 +139,70 @@
         font-size: 4.2667vw;
     }
    
-    
-
-    main .story {
-        font-size: 8.5333vw;
-        margin: 40vw auto;/*150px*/
-    }
-    main .story h1{
-        font-size: 8.5333vw;/*24px*/
-        margin: 7.1429vw; /*20px*/
-        text-transform: uppercase;
-    }
     main .story .slide{
-       display: flex;
-       flex-direction: column;
-       gap: 2.6667vw; /*10px*/
-    }
+        display: flex;
+        flex-direction: column;
+        gap: 2.6667vw; /*10px*/
+        overflow: hidden;
+     }
+   
     main .story .slide .part1{
         display: flex;
         gap: 2.6667vw;/*10px*/
-        overflow: hidden;
+        animation: loop1 20s linear infinite;
+        position: relative;
+        
     }
     main .story .slide .part2{
         display: flex;
         gap: 2.6667vw;/*10px*/
-        overflow: hidden;
+        animation: loop2 20s linear infinite;
+        position: relative;
+    }
+    main .story .slide img{
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        filter: brightness(90%);
+        
+    }
+    main .story .slide img:hover {
+        transform: scale(0.9);
+        filter: brightness(110%);
+    }
+
+    @keyframes loop1{
+        0% {
+            transform: translateX(0%);
+          }
+        25% {
+            transform: translateX(-25%);
+        }
+        50% {
+            transform: translateX(-50%);
+        }
+        75% {
+            transform: translateX(-75%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+    }
+    @keyframes loop2{
+        100% {
+            transform: translateX(0%);
+          }
+        75% {
+            transform: translateX(-25%);
+        }
+        50% {
+            transform: translateX(-50%);
+        }
+        25% {
+            transform: translateX(-75%);
+        }
+        0% {
+          transform: translateX(-100%);
+        }
     }
 
     main .story img{
@@ -198,12 +242,15 @@
         width: 32vw; /*120px */
         height: 8.5333vw; /*32px*/
         border-radius: 50px;
-    }
-    main .summit_life button a{
         color: #585858;
         font-size: 3.7333vw; /*14px;*/
         text-decoration: none;
         font-weight: 700;
+    }
+  
+    main .summit_life button:hover{
+        transform: translateY(2px);
+        
     }
     main .news{
         margin: 40vw 7.1429vw; /* 150px 20px*/
@@ -284,13 +331,16 @@
         width: 32vw; /*120px */
         height: 8.5333vw; /*32px*/
         border-radius: 50px;
-    }
-    main .future button a{
         color: #585858;
         font-size: 3.7333vw; /*14px;*/
         text-decoration: none;
         font-weight: 700;
     }
+    main .future  button:hover{
+        transform: translateY(2px);
+        
+    }
+   
     footer .connection{
         margin: 18.6667vw 0 13.3333vw ; /*70vw 50vw*/
     }
@@ -336,14 +386,12 @@
         
         width: 69.3333vw;
         height: 13.3333vw;
-        
-    }
-    footer .foot button a{
         color: #585858;
         font-size: 3.7333vw; /*14px;*/
         text-decoration: none;
         font-weight: 700;
     }
+ 
     footer .foot p{
         margin: 5.3333vw;
         text-align: center;

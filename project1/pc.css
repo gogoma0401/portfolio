@@ -174,41 +174,6 @@ main .subject .page_number span:nth-child(1){
     font-size: 4.5313vw;/*58px*/
     margin: 7.1429vw; /*20px*/
     }
-  main .story .slide .part1{
-    animation: slide_ani1 40s linear infinite;
-    position: relative;
-    overflow: visible;
-  }
-  main .story .slide .part2{
-    animation: slide_ani2 40s linear infinite;
-    overflow: visible;
-  }
- 
-  @keyframes slide_ani1 {
-    0% {
-      transform: translateX(0);
-    }
-    50%{
-      transform: translateX(-50%);
-    }
-    
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes slide_ani2 {
-    0% {
-      transform: translateX(0);
-    }
-    50%{
-      transform: translateX(50%);
-    }
-    
-    100% {
-      transform: translateX(100%);
-    }
-  }
   
   main .story img{
     width: 15.6250vw;/*200*/
@@ -254,14 +219,13 @@ main .subject .page_number span:nth-child(1){
     height: 4.2969vw; /*55px*/
     border-radius: 50px;
     margin-left: 5.4688vw;/*70px;*/
-    
-  }
-  main .summit_life button a{
     color: #585858;
     font-size: 1.5625vw; /*20x*/
     text-decoration: none;
     font-weight: 700;
+    
   }
+ 
  
   main .news .title{
     display: flex;
@@ -343,14 +307,13 @@ main .future button{
   width: 17.9688vw; /*230px */
   height: 4.2969vw; /*55px*/
   border-radius: 50px;
-
-}
-main .future button a{
   color: #585858;
   font-size: 1.5625vw; /*20x*/
 
   font-weight: 700;
+
 }
+
 main .future h1 span{
     display: block;
 }
@@ -393,12 +356,10 @@ footer .foot button{
   
   width: 42.9688vw; /*550px*/
   height: 8.4635vw; /*65*/
+  font-size: 2.1875vw; /*28px*/
   
 }
 
-footer .foot button a{
-  font-size: 2.1875vw; /*28px*/
-}
 footer .foot p{
   font-size: 2.1875vw; /*28px*/
 }
