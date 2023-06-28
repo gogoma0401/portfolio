@@ -264,6 +264,7 @@ main .information .skills ul li ul{
   
 }
 main .information .skills ul>li>ul>li{
+  width: 270px;
   font-family: 'LINESeedKR-Rg';
   font-style: normal;
   padding: 0;
