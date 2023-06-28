@@ -1,0 +1,16 @@
+@font-face{
+    font-family: 'Fontspring-DEMO-tghaidogrotesk-extrabold';
+    src: url(./fonts/Fontspring-DEMO-tghaidogrotesk-extrabold.woff) format('woff');
+}
+@font-face{
+    font-family: 'Fontspring-DEMO-tghaidogrotesk-semibold';
+    src: url(./fonts/Fontspring-DEMO-tghaidogrotesk-semibold.woff) format('woff');
+}
+@font-face{
+    font-family: 'Fontspring-DEMO-tghaidogrotesk-semibolditalic';
+    src: url(./fonts/Fontspring-DEMO-tghaidogrotesk-semibolditalic.woff) format('woff');
+}
+@font-face{
+    font-family: 'LINESeedKR-Rg';
+    src: url(./fonts/LINESeedKR-Rg.woff) format('woff');
+}
