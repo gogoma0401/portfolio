@@ -2,7 +2,7 @@
 html {
   --s: 100px; /* control the size */
   
-  --_g: #0000 90deg,#caffda 0;
+  --_g: #0000 90deg,#e7e7e7 0;
   background: 
     conic-gradient(from 90deg at 2px 2px,var(--_g)),
     conic-gradient(from 90deg at 1px 1px,var(--_g));
@@ -89,7 +89,7 @@ main .txt{
 main .txt h1{
   font-family: 'LINESeedKR-Rg';
   margin: auto;
-  margin-bottom: 200px;
+  margin-bottom: 10px;
   width: 1050px;
   font-size: 128px;
   line-height: 1.1;
@@ -142,65 +142,7 @@ main .txt .circle2{
   }
 }
 
-main .slide{
-  overflow: hidden;
-}
-main .slide .slide_img{
-  height: 500px;
-  position: relative;
-  display: flex;
-  gap: 400px;
-}
-main .slide .slide_img img{
-  width: 500px;
-  height: 300px;
-  object-fit:cover;
-  object-position: left;
-}
 
-main .slide .slide_img img:nth-child(1){
-  position: absolute;
-  top: 49%; left: 10%;
-  transform: translate(-50%,-50%) rotate(-10deg);
-
-}
-main .slide .slide_img img:nth-child(2){
-  position: absolute;
-  top: 40%; left: 50%;
-  transform: translate(-50%,-50%)
-}
-main .slide .slide_img img:nth-child(3){
-  position: absolute;
-  top: 49%; left: 90%;
-  transform: translate(-50%,-50%) rotate(10deg);
- 
-}
-
-main .slide_txt{
-  margin: auto;
-  text-align: center;
-  margin-bottom: 200px;
-  width: 700px;
-  
-}
-
-main .slide_txt h2{
-  font-size: 84px;
-  font-family: 'Fontspring-DEMO-tghaidogrotesk-semibold';
-  font-weight: 500;
-}
-main .slide ul{
-  display: flex;
-  justify-content: space-around;
-  width: 100%
-  
-}
-main .slide ul li ul{
-  display: flex;
-  flex-direction: column;
-  
-
-}
 
 main .information{
   background-color: #1A1818;
@@ -239,8 +181,8 @@ main .information .skills ul li{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  height: 80px;
+  padding: 40px 0;
+  height: 60px;
 }
 
 main .information .skills>ul>li{
@@ -272,7 +214,7 @@ main .information .skills ul>li>ul>li{
   font-size: 18px;
   color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items:center;
   
 }
