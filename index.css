@@ -1,4 +1,25 @@
 @charset "utf-8";
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+  width: 17px;
+  /* 세로축 스크롤바 폭 너비 */
+}
+::-webkit-scrollbar-thumb {
+  background: #2AF563;
+  
+  /* 스크롤바 막대 테두리 설정  */
+  border-radius: 12px 12px 12px 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #82f3a2;
+}
+/* 스크롤이 움직이는 뒷 배경 */
+::-webkit-scrollbar-track {
+  background: #95959550;
+  /* 스크롤바 뒷 배경 색상 */
+}
+
+
 html {
   --s: 100px; /* control the size */
   
