@@ -1,10 +1,13 @@
 @charset "utf-8";
-    body{
+    html,
+    body {
+        position: relative;
+        height: 100%;
         margin: 0;
         font-family: 'Noto Sans KR',-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
         word-break: keep-all;
-        
     }
+
     ul{
         margin: 0; padding: 0;
     }
@@ -38,43 +41,47 @@
     header .head img:nth-child(2){
         width: 24px;
     }
-    
-    main{
-        margin: auto;
-    }
-    main .subject{
-        margin: auto;
-        position: relative;
-       
-    }
-    main .subject img{
-        width: 100%;
-    }
-    main .subject .txt{
-        position: absolute;
-        left:50%; top: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 999;
-        color: white;
+    /* 스와이퍼 */
+    .swiper {
+    width: 100%;
+    height: 40%;
+    z-index: -9999;
     }
 
-    main .subject .txt h1{
-        font-size: 6.4000vw;   /*24px*/
-        text-align: center;
-        margin-bottom: 1.0667px; /*4px*/
+    .swiper-slide {
+    text-align: center;
+    font-size: 20px;
+    background: #979797;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 
-    main .subject .txt h3{
-        font-size: 3.7333vw;/*14px*/
-        text-align: center;
-        margin-top: 1.8667vw; /*7px*/
+    .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     }
-    main .subject .txt h3 span{
-        display: block;
+    .mySwiper .swiper-wrapper .swiper-slide:nth-child(1){
+        background: url(./images/main1.png) no-repeat;
+        background-size: cover;
     }
-  
-    main .subject .page_number{
-        display: none;
+    .mySwiper .swiper-wrapper .swiper-slide:nth-child(2){
+        background: url(./images/main2.png) no-repeat;
+        background-size: cover;
+    }
+    .mySwiper .swiper-wrapper .swiper-slide:nth-child(3){
+        background: url(./images/main3.png) no-repeat;
+        background-size: cover;
+    }
+    .mySwiper .swiper-wrapper .swiper-slide:nth-child(4){
+        background: url(./images/main4.png) no-repeat;
+        background-size: cover;
+    }
+    .mySwiper .swiper-wrapper .swiper-slide:nth-child(5){
+        background: url(./images/main5.png) no-repeat;
+        background-size: cover;
     }
 
     main .our-business{
