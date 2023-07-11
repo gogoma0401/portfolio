@@ -1,0 +1,46 @@
+@charset 'utf-8';
+
+.circleCarousel {
+  height: 130vh;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.won {
+  --size: 195vw;
+  --img-width: 20.555vw;
+  --img-height: 25.6944vw;
+  --radius: calc((var(--size) - var(--img-height)) / 2);
+  --rotation: 0deg;
+  width: var(--size);
+  min-width: 600px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 20%;
+  left: calc(50% - var(--size) / 2);
+  rotate: calc(-90deg + var(--rotation));
+  transition: rotate 2s cubic-bezier(.55,0,.1,1);
+}
+
+.image {
+  --index: 0;
+  --step: calc(360deg / var(--items));
+  --offset: 250px;
+  --angle: calc(var(--step) * var(--index));
+  --difference: calc((var(--img-height) - var(--img-width)) / 2);
+  --x: calc( var(--difference) + var(--radius) + var(--radius) * cos(var(--angle)));
+  --y: calc( var(--radius) + var(--radius) * sin(var(--angle)));
+  
+  background: #ccc;
+  width: var(--img-width);
+  height: var(--img-height);
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  background: url('https://picsum.photos/600');
+  background-size: cover;
+  background-position: center center;
+  transform-origin: center center;
+  rotate: calc(var(--angle) + 90deg);
+}
