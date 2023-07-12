@@ -4,11 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mainpage</title>
-  <link rel="stylesheet" href="./index.css">
-  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-5" rel="stylesheet">
+  
+  
+  <!-- reset -->
+  <link rel="stylesheet" href="./common/style/minireset.min.css">
+  <!-- font -->
   <link rel="stylesheet" href="./common/style/fonts.css">
-  <link rel="stylesheet" href="./common/style/slide.css"> 
-  <script defer src="./common/style/slide.js"></script>     
+
+  <!-- swiper css -->
+  <link rel="stylesheet" href="./common/style/slide.css">
+  <!-- index css -->
+  <link rel="stylesheet" href="./index.css">
+
+  <!-- script -->
+  <link rel="stylesheet" href="./common/style/jquery-3.7.0.min.js">
+  <!-- swiper script -->
+  <script defer src="./common/style/slide.js"></script>
+  <!-- index script -->
+  <script defer src="./index.js"></script>     
 <body>
   <header>
     <ul>
@@ -19,19 +32,20 @@
           <li>contact</li>
         </ul>
       </li>
-      <li>github</li>
+      <li><a href="https://github.com/gogoma0401/portfolio">github</a></li>
     </ul>
   </header>
   
  <!-- 395x493 -->
   <main>
-    <div class="txt">
-      <h1>Helping our partners build original brands that shine.</h1>
+    <div class="head_line">
+      <h1 class="text"></h1></span><span class="blink">|</span>
       <div class="circle circle1"></div>
       <div class="circle circle2"></div>
+      <div class="circle_txt"><p>console.log('도전형입니다.')</p></div>
     </div>
     <div class="circleCarousel">
-      <div class="won" style="--items: 21">
+      <div class="won" style="--items: 20">
         <div class="image" style="--index: 0"></div>
         <div class="image" style="--index: 1"></div>
         <div class="image" style="--index: 2"></div>
@@ -52,7 +66,6 @@
         <div class="image" style="--index: 17"></div>
         <div class="image" style="--index: 18"></div>
         <div class="image" style="--index: 19"></div>
-        <div class="image" style="--index: 20"></div> 
       </div>
     </div>
      
@@ -61,22 +74,24 @@
       <h1>Skills</h1>
       <div class="skills">
         <ul>
-          <li>HTML5 & CSS3
+          <li>HTML5 , CSS3
             <ul>
-              <li>웹 레이아웃 구성</li>
+              <li>Flex, Grid, Postion을 활용한 작업</li>
               <li>웹 접근성과 내용에 적합한 작업</li>
+              <li>Css를 이용한 애니매이션 작업</li>
             </ul>
           </li>
-          <li>JavaScript & jQeury
+          <li>JavaScript , jQeury
             <ul>
               <li>ES6+ 문법 이해</li>
               <li>Ajax를 이용해 JSON 데이터 활용</li>
+              <li>다양한 플러그인(스크립트)사용</li>
             </ul>
           </li>
-          <li>Git&Github
+          <li>Git , Github
             <ul>
-              <li>Git Bash로 Git Hub</li>
-              <li>연동 및 파일 관리</li>
+              <li>git bash을 이용한 커뮤니케이션</li>
+              <li>GitHub를 통한 연동 및 파일 관리</li>
             </ul>
           </li>
           <li>Graphic Design
@@ -88,7 +103,7 @@
           <li class="last">Figma
             <ul>
               <li>프로토타입 제작</li>
-              <li></li>
+              <li>와이어 프레임 제작</li>
             </ul>
           </li>
         </ul>
@@ -100,11 +115,111 @@
       <div class="introduce">
         <div class="circle circle3"></div>
         <div class="circle circle4"></div>
+        <div class="circle_txt"><p>alert('#신입 #도전정신 #끈기')</p></div>
         <ul>
-          <li>Junhyeon</li>
-          <li>kakao</li>
-          <li>gogoma0401@naver.com</li>
-          <li>github.com@gogoma0401</li>
+          <li>Junhyeon</li>  
+          <li class="paper"><a href="">kakao</a>
+            <ul>
+              <li>
+                 <div class="sticker-hover __web-inspector-hide-shortcut__">
+                  <div class="sticker part" data-type="1" data-num="1" data-order="1" style="transform: translate(0px, 380px) rotate(80.94deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="1" data-num="2" data-order="6" style="transform: translate(0px, 380px) rotate(-26.37deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="1" data-num="3" data-order="8" style="transform: translate(0px, 380px) rotate(52.22deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="1" data-num="4" data-order="15" style="transform: translate(0px, 380px) rotate(53.76deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="1" data-order="10" style="transform: translate(0px, 380px) rotate(39.57deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="2" data-order="3" style="transform: translate(0px, 380px) rotate(1.02deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="3" data-order="7" style="transform: translate(0px, 380px) rotate(-94.56deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="4" data-order="12" style="transform: translate(0px, 380px) rotate(39.37deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="5" data-order="11" style="transform: translate(0px, 380px) rotate(59.53deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="3" data-num="1" data-order="13" style="transform: translate(0px, 380px) rotate(0.36deg);"><img src="./images/sticker3.png"></div>
+
+                  <div class="sticker part" data-type="4" data-num="1" data-order="4" style="transform: translate(0px, 380px) rotate(22.62deg);"><img src="./images/sticker4.png"></div>
+
+                  <div class="sticker part" data-type="4" data-num="2" data-order="14" style="transform: translate(0px, 380px) rotate(-50.68deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="1" data-order="2" style="transform: translate(0px, 380px) rotate(56.69deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="2" data-order="5" style="transform: translate(0px, 380px) rotate(-62.45deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="3" data-order="9" style="transform: translate(0px, 380px) rotate(59.43deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="4" data-order="16" style="transform: translate(0px, 380px) rotate(71.17deg);"><img src="./images/sticker5.png"></div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="paper"><a href="">gogoma0<span class="new_type">4</span>01<span class="new_type">@</span>naver.com</a>
+            <ul>
+              <li>
+                <div class="sticker-hover __web-inspector-hide-shortcut__">
+                  <div class="sticker part" data-type="1" data-num="1" data-order="1" style="transform: translate(0px, 380px) rotate(80.94deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="1" data-num="2" data-order="6" style="transform: translate(0px, 380px) rotate(-26.37deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="1" data-num="3" data-order="8" style="transform: translate(0px, 380px) rotate(52.22deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="1" data-num="4" data-order="15" style="transform: translate(0px, 380px) rotate(53.76deg);"><img src="./images/sticker1.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="1" data-order="10" style="transform: translate(0px, 380px) rotate(39.57deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="2" data-order="3" style="transform: translate(0px, 380px) rotate(1.02deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="3" data-order="7" style="transform: translate(0px, 380px) rotate(-94.56deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="4" data-order="12" style="transform: translate(0px, 380px) rotate(39.37deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="2" data-num="5" data-order="11" style="transform: translate(0px, 380px) rotate(59.53deg);"><img src="./images/sticker2.png"></div>
+
+                  <div class="sticker part" data-type="3" data-num="1" data-order="13" style="transform: translate(0px, 380px) rotate(0.36deg);"><img src="./images/sticker3.png"></div>
+
+                  <div class="sticker part" data-type="4" data-num="1" data-order="4" style="transform: translate(0px, 380px) rotate(22.62deg);"><img src="./images/sticker4.png"></div>
+
+                  <div class="sticker part" data-type="4" data-num="2" data-order="14" style="transform: translate(0px, 380px) rotate(-50.68deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="1" data-order="2" style="transform: translate(0px, 380px) rotate(56.69deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="2" data-order="5" style="transform: translate(0px, 380px) rotate(-62.45deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="3" data-order="9" style="transform: translate(0px, 380px) rotate(59.43deg);"><img src="./images/sticker5.png"></div>
+
+                  <div class="sticker part" data-type="5" data-num="4" data-order="16" style="transform: translate(0px, 380px) rotate(71.17deg);"><img src="./images/sticker5.png"></div>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="paper3"><a href="">github.com<span class="new_type">@</span>gogoma<span class="new_type">4</span>01</a>
+           <ul>
+              <li>
+                 <div class="sticker3">
+                  <img src="./images/sticker1.png">
+                  <img src="./images/sticker1.png">
+                  <img src="./images/sticker1.png">
+                  <img src="./images/sticker1.png">
+                  <img src="./images/sticker2.png">
+                  <img src="./images/sticker2.png">
+                  <img src="./images/sticker2.png">
+                  <img src="./images/sticker2.png">
+                  <img src="./images/sticker2.png">
+                  <img src="./images/sticker3.png">
+                  <img src="./images/sticker4.png">
+                  <img src="./images/sticker5.png">
+                  <img src="./images/sticker5.png">
+                  <img src="./images/sticker5.png">
+                  <img src="./images/sticker5.png">
+                  <img src="./images/sticker5.png">
+                </div>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>
