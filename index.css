@@ -115,7 +115,7 @@ main .head_line h1{
   margin-bottom: 10px;
   width: 1050px;
   height: 490px;
-  font-size: 108px;
+  font-size: 110px;
   line-height: 1.5;
 }
 
@@ -185,6 +185,9 @@ main .head_line .circle_txt{
     transform:rotate(-2deg);
   }
 }
+main .folio{
+  position: relative;
+}
 main .circleCarousel .won .image:nth-child(0),
 main .circleCarousel .won .image:nth-child(5),
 main .circleCarousel .won .image:nth-child(10),
@@ -216,24 +219,48 @@ main .circleCarousel .won .image:nth-child(19){
   background: url(http://placehold.it/395x493) no-repeat center center/contain;
 }
 
+main .project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  font-size: 55px;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+main .project p{
+  font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
+  font-weight: bold;
+  font-size: 96px;
+}
+main .project > ul{
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+
 main .information{
   background-color: #1A1818;
-  color: #2AF563;
-  font-style: italic;
-  font-style: normal;
   padding: 40px 0;
 }
 
 main .information h1{
-  font-family: 'Fontspring-DEMO-tghaidogrotesk-semibold';
-
+  font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-blackitalic';
+  font-weight: bold;
   font-style: italic;
+  color: white;
   margin: 0;
   margin-left: 140px;
   margin-bottom: 30px;
   padding-top: 100px;
   font-size: 96px;
-  color: white;
+  
 }
 
 main .information .skills{
@@ -247,9 +274,10 @@ main .information .skills ul{
 
 
 main .information .skills ul li{
-  font-family: 'Fontspring-DEMO-tghaidogrotesk-semibold';
+  font-family: 'FMiConv.com__Fontspring-DEMO-tghaidogrotesk-blackitalic';
   font-weight: bold;
   font-style: italic;
+  color: #2AF563;
   font-size: 36px;
   display: flex;
   flex-direction: row;
@@ -283,10 +311,11 @@ main .information .skills ul>li>ul>li{
   width: 270px;
   font-family: 'LINESeedKR-Rg';
   font-style: normal;
+  color: white;
   padding: 0;
   font-weight: normal;
   font-size: 18px;
-  color: white;
+  
   display: flex;
   justify-content: flex-end;
   align-items:center;
@@ -374,9 +403,9 @@ main .introduce .circle_txt{
 }
 
 main .introduce ul li:nth-child(1){
-  font-family: 'Fontspring-DEMO-tghaidogrotesk-semibold';
+  font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
   font-size: 280px;
-  font-weight: 700;
+  font-weight: bold;
   color: #2AF563;
   text-align: center;
   width: 100%;
