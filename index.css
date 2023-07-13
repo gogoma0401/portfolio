@@ -210,34 +210,88 @@ main .circleCarousel .won .image:nth-child(3),
 main .circleCarousel .won .image:nth-child(8),
 main .circleCarousel .won .image:nth-child(13),
 main .circleCarousel .won .image:nth-child(18){
-  background: url(http://placehold.it/395x493) no-repeat center center/contain;
+  background: url(./images/project4.jpg) no-repeat center center/contain;
 }
 main .circleCarousel .won .image:nth-child(4),
 main .circleCarousel .won .image:nth-child(9),
 main .circleCarousel .won .image:nth-child(14),
 main .circleCarousel .won .image:nth-child(19){
-  background: url(http://placehold.it/395x493) no-repeat center center/contain;
+  background: url(./images/project5.jpg) no-repeat center center/contain;
 }
 
-main .project{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 50px;
-  font-size: 55px;
+main .circleCarousel .won .image{
+  transition: all 1s;
+  cursor: pointer;
+} 
+
+main .circleCarousel .won .image:hover{
+  transform: scale(1.1);
+}
+
+main .project_V{
+  height: 400px;
+  position: relative;
+}
+
+main .project_V .project{
   position: absolute;
-  top: 85%;
+  top: -140px;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
+  width: 60%;
 }
-main .project p{
+
+main .project_V .project p{
   font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
   font-weight: bold;
   font-size: 96px;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 100px;
 }
+
+main .project_V .project p:hover .highlight:after{
+  width:100%;
+}
+.highlight{
+  display: inline-block; 
+  position: relative;
+}
+.highlight:after{
+  content:"";
+  width: 0;
+  height: 40px;
+  display: inline-block;
+  background: #a1fda5;
+  position: absolute;
+  bottom:0;
+  left:0;
+  z-index:-1;
+  transition: 0.2s all;
+}
+
+main .project_V .project ul{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+ 
+}
+main .project_V .project ul li{
+  font-family: 'LINESeedKR-Rg';
+  font-size: 41px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .project_V .project ul li ul li{
+  font-size: 24px;
+}
+
+
 main .project > ul{
   display: flex;
   justify-content: center;
@@ -482,7 +536,7 @@ footer ul{
 }
 .introduce ul .paper:hover a{
   color: white;
-  transition: 4s ease-in-out;
+  transition: 6s ease-in-out;
   transform: scale(1.5);
 }
 
@@ -655,17 +709,7 @@ footer ul{
 .introduce ul > .paper:nth-child(3) ul li .sticker3 img{
   position: absolute; 
 }
-.introduce ul .paper3{
-  position: relative;
-  overflow: hidden;
-}
 
-.introduce ul .paper3:hover .sticker3{
-  color: red;
-  position: absolute;
-  top: -100px;
-  animation: falling 1s infinite linear; 
-}
 
 @keyframes falling {
   0% {
