@@ -724,3 +724,8 @@ footer ul{
     opacity: 0;
   }
 }
+footer ul li{
+  font-family: 'LINESeedKR-Rg';
+  font-size: 16px;
+  margin-right: 6px;
+}
