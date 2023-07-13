@@ -342,7 +342,7 @@ main .information .skills ul li{
 main .information .skills>ul>li{
   border-bottom: #2AF563 solid 1px;
   transition: all 1s;
-  height: 160px
+  height: 180px
 }
 main .information .skills>ul>li:hover{
   color: white;
@@ -362,7 +362,7 @@ main .information .skills ul li ul{
   
 }
 main .information .skills ul>li>ul>li{
-  width: 270px;
+  width: 450px;
   font-family: 'LINESeedKR-Rg';
   font-style: normal;
   color: white;
