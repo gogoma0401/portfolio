@@ -1,0 +1,58 @@
+
+@font-face{
+    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
+    src: url(../fonts/MiConv.com__Fontspring-DEMO-tghaidogrotesk-black.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-blackitalic';
+    src: url(../fonts/MiConv.com__Fontspring-DEMO-tghaidogrotesk-blackitalic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}   
+@font-face {
+    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-medium';
+    src: url(../fonts/MiConv.com__Fontspring-DEMO-tghaidogrotesk-medium.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-semibold';
+    src: url(../fonts/MiConv.com__Fontspring-DEMO-tghaidogrotesk-semibold.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-semibolditalic';
+    src: url(../fonts/MiConv.com__Fontspring-DEMO-tghaidogrotesk-semibolditalic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'LINESeedKR-Th';
+    src: url(../fonts/LINESeedKR-Th.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'LINESeedKR-Rg';
+    src: url(../fonts/LINESeedKR-Rg.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'LINESeedKR-Bd';
+    src: url(../fonts/LINESeedKR-Bd.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
