@@ -10,9 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <!--  Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+    
     <!-- reset -->
     <link rel="stylesheet" href="../common/style/minireset.min.css">
     <!-- font -->
@@ -75,32 +73,9 @@
             </ul>
         </div>
 
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="./images/slide1.png"/>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/slide2.png"/>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/slide3.png"/>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/slide4.png"/>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/slide5.png"/>
-                </div>
-                  <div class="swiper-slide">
-                    <img src="./images/slide5.png"/>
-                </div>
-                <div class="swiper-slide">
-                    <img src="./images/slide7.png"/>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
+        <div class="main_img">
+         <img src="./images/slide1.png">
+         <img src="./images/slide4.png">
         </div>
 
         <div class="overview">
@@ -245,17 +220,20 @@
        <div class="review">
             <div class="lower">
             <h3>배운점</h3>
-            <p>처음으로 모바일 앱 디자인 작업을 시도해 보았다. 이전에는 웹사이트 디자인을 다루는 것이 일상적이었기 때문에 모바일 앱 디자인에도 비슷한 접근 방식을 사용할 수 있을 것이라 생각했으나, 실제로는 다른 독특한 측면이 있음을 느꼈다. 앱 디자인은 웹 디자인과 마찬가지로 심미성과 사용성을 고려해야 하는데,  iOS나 Android 디바이스의 특성과 사용 맥락도 함께 고려해야 한다는 점을  처음 알게 되었다. 작은 화면에 많은 정보를 표현해야 하고, 입력 도구의 한계를 고려해야 했기 때문에 이러한 요소들을 반영하는 것이 낯설었다.
+            <p>처음으로 모바일 앱 디자인 작업을 시도해 보았다.</p>
+            <P>이전에는 웹사이트 디자인을 다루는 것이 일상적이었기 때문에 모바일 앱 디자인에도 비슷한 접근 방식을 사용할 수 있을 것이라 생각했으나, 실제로는 다른 측면이 있음을 느꼈다.</P>
+            <P>작은 화면에 많은 정보를 표현해야 하고, 입력 도구의 한계를 고려해야 했기 때문에 이러한 요소들을 반영하는 것이 낯설었다.
             따라서, 디자인작업에 있어서 많은  경험이 필요하다는 것을 절실히 깨달았다.</p>
 
             <h3>잘한점</h3>
-            <p>부족한 것이 있거나, 수정해야 될 것이 생겨도 서로 책임감 있게, 다음 작업 전까지 최선을 다해 작업물을
-            만들어 오는 팀원들을 보고, 나의 학습 자세를 다시 한번 돌아보게 되었다.</p>
+            <p>책임감 있게, 다음 작업 전까지 최선을 다해 작업물을 만들어 오고, 끝가지 프로젝트에 참여 및 발표한 것.</p>
 
             <h3>Review</h3>
-            <p>팀  작업을 처음으로 경험하면서 각각의 팀원들은 서로 다른 관점과 시각을 가지고 있었다.   이를 통해 모바일 UX 디자인에 대한 이해도가 매우 중요하다는 것을 깨달았으며, 직접 작업하고 배우는 과정에서 많은 경험을 쌓을 수 있다.
+            <p>팀  작업을 처음으로 경험하면서 각각의 팀원들은 서로 다른 관점과 시각을 가지고 있었다.</p>
+            <p>이를 통해 모바일 UX 디자인에 대한 이해도가 매우 중요하다는 것을 깨달았으며, 직접 작업하고 배우는 과정에서 많은 경험을 쌓을 수 있었다.</p>
 
-            앞으로도 많은 시행 착오를 거치며 계속해서 성장하고 싶다.  이 경험이 저에게 지속적인 성장과 발전을 위한 자극이 되었던 것 처럼..</p>
+
+            <p>앞으로도 많은 시행 착오를 거치며 계속해서 성장하고 싶다.</p>
             </div>
        </div>
 
@@ -492,7 +470,6 @@
                 </li>
             </ul>
         </div>
-    </secti on>
     </main>
     <footer>
         <ul>
@@ -511,26 +488,5 @@
     <script> 
             AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
     </script>
-
-     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-        effect: "cube",
-        grabCursor: true,
-        cubeEffect: {
-            shadow: true,
-            slideShadows: true,
-            shadowOffset: 20,
-            shadowScale: 0.94,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-        },
-        });
-    </script>
-
 </body>
 </html>

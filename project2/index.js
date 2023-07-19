@@ -1,20 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*******날짜 시간******/
 /*
    toLocaleDateString(), toLocaleTimeString(), toLocaleString() 함수

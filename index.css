@@ -19,6 +19,11 @@
   /* 스크롤바 뒷 배경 색상 */
 }
 
+/* 마우스 텍스트 드래그 효과 */
+::selection {
+		background-color: #2AF563;
+		color: white;
+	}
 
 html {
   --s: 100px; /* control the size */

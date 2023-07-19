@@ -23,6 +23,11 @@
     /* 스크롤바 뒷 배경 색상 */
 }
 
+/* 마우스 텍스트 드래그 효과 */
+::selection {
+		background-color: #2AF563;
+		color: white;
+	}
 
 html {
     --s: 100px;
@@ -36,6 +41,9 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+	height: 100%;
+}
 a {
     color: black;
     text-decoration: none;
@@ -155,29 +163,17 @@ main .head_line .sub li ul li{
     font-size: 20px;
     
 }
-/* 슬라이드 구현 할 곳 */
+/* 메인 이미지 */
+.main_img{
+    margin-top: 100px;
+    text-align: center;
+}
+.main_img img{
+    width: 200px;
+    margin-right: 80px;
+    object-fit: contain;
+}
 
-.swiper {
-      padding-top: 100px;
-      width: 360px;
-      height: 800px;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      margin-left: -150px;
-      margin-top: -150px;
-    }
-
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      object-fit: cover;
-    }
 /*기본 폰트크기 설정*/
 
 h2{
@@ -217,7 +213,7 @@ h4{
 /* body */
 
 .overview{
-    margin-top: 900px;
+    margin-top: 200px;
     margin-left: 330px;
     margin-bottom: 100px;
 }
@@ -333,12 +329,12 @@ main .tobe .cir1 .circle{
   transform: translate(-50%,-50%);
 }
 main .tobe .cir .circle{
-  transform:rotate(-6deg);
+  transform:rotate(6deg);
   animation: move1 1s ease infinite;
 }
 
 main .tobe .cir .circle2{
-  transform:rotate(-2deg);
+  transform:rotate(10deg);
   animation: move2 1s ease infinite;
 }
 /*원 2*/
@@ -353,12 +349,12 @@ main .tobe .cir2 .circle{
 }
 main .tobe .cir2 .circle{
   transform:rotate(-6deg);
-  animation: move1 1s ease infinite;
+  animation: move3 3s ease infinite;
 }
 
 main .tobe .cir2 .circle2{
   transform:rotate(-2deg);
-  animation: move2 1s ease infinite;
+  animation: move4 3s ease infinite;
 }
 /*원 3*/
 main .tobe .cir3 .circle{
@@ -371,16 +367,45 @@ main .tobe .cir3 .circle{
   transform: translate(-50%,-50%);
 }
 main .tobe .cir3 .circle{
-  transform:rotate(-6deg);
-  animation: move1 1s ease infinite;
+  transform:rotate(-3deg);
+  animation: move5 1s ease infinite;
 }
 
 main .tobe .cir3 .circle2{
-  transform:rotate(-2deg);
-  animation: move2 1s ease infinite;
+  transform:rotate(1deg);
+  animation: move6 1s ease infinite;
 }
 
 @keyframes move1{
+  0%{
+    transform:rotate(6deg);
+  }
+  50%{
+    transform:rotate(9deg);
+  }
+  100%{
+    transform:rotate(6deg);
+  }
+}
+@keyframes move2{
+  0%{
+    transform:rotate(10deg);
+  }
+  25%{
+    transform:rotate(7deg);
+  }
+  50%{
+    transform:rotate(5deg);
+  }
+  75%{
+    transform:rotate(7deg);
+  }
+  100%{
+    transform:rotate(10deg);
+  }
+}
+
+@keyframes move3{
   0%{
     transform:rotate(-6deg);
   }
@@ -391,21 +416,50 @@ main .tobe .cir3 .circle2{
     transform:rotate(-6deg);
   }
 }
-@keyframes move2{
+@keyframes move4{
   0%{
     transform:rotate(-2deg);
   }
   25%{
-    transform:rotate(-4deg);
+    transform:rotate(-6deg);
+  }
+  50%{
+    transform:rotate(-9deg);
+  }
+  75%{
+    transform:rotate(-6deg);
+  }
+  100%{
+    transform:rotate(-2deg);
+  }
+}
+
+@keyframes move5{
+  0%{
+    transform:rotate(3deg);
+  }
+  50%{
+    transform:rotate(-3deg);
+  }
+  100%{
+    transform:rotate(3deg);
+  }
+}
+@keyframes move6{
+  0%{
+    transform:rotate(1deg);
+  }
+  25%{
+    transform:rotate(-3deg);
   }
   50%{
     transform:rotate(-6deg);
   }
   75%{
-    transform:rotate(-4deg);
+    transform:rotate(-3deg);
   }
   100%{
-    transform:rotate(-2deg);
+    transform:rotate(1deg);
   }
 }
 
@@ -472,7 +526,7 @@ main .tobe .cir .circle1 h4{
 .review{
     background-color: #1A1818;
     color: white;
-    height: 1000px;
+    height: 1100px;
 }
 
 .review .lower{
@@ -482,13 +536,15 @@ main .tobe .cir .circle1 h4{
 }
 .review .lower h3{
     color: #2AF563;
+    margin-bottom: 30px;
+    margin-top: 80px;
 }
 .review .lower p{
     font-family: 'LINESeedKR-Rg';
     font-size: 22px;
     width: 60%;
     line-height: 1.5;
-    margin-bottom: 70px;
+    margin-bottom: 15px;
 }
 
 main .veiw{
@@ -522,8 +578,6 @@ main .veiw h2 a{
 main .veiw h2:hover{
     background-color: #2AF563;
     color: #2AF563;
-    
-    border-radius: 40%;
 }
 main .veiw h2:hover a{
     color: #1A1818;
