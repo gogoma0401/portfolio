@@ -224,6 +224,22 @@ h4{
   transition: 0.2s all;
 }
 
+.highlight2{
+  display: inline-block; 
+  position: relative;
+}
+.highlight2:after{
+  content:"";
+  width:100%;
+  height: 13px;
+  display: inline-block;
+  background: #fdefa1;
+  position: absolute;
+  bottom:10px;
+  left:0;
+  z-index:-1;
+  transition: 0.2s all;
+}
 /* body */
 
 .overview{
@@ -259,6 +275,10 @@ h4{
 .responsibilities h2{
     margin-bottom: 100px;
 }
+.responsibilities ul h4:nth-of-type(1){
+    margin-bottom: 50px;
+}
+
 
 .design{
     margin-top: 150px;
@@ -282,6 +302,8 @@ h4{
 .design .type h4{
     width: 60%;
 }
+
+
 
 .design .container .colors{
     width: 40%;
@@ -412,20 +434,23 @@ h4{
 
 .Problem .solution .solving .site{
     margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .Problem .solution .solving .site a{
     color: white;
     font-size: 20px;
     display: flex;
+    flex-direction: row;
     align-items: flex-end;
+ 
 }
 
 .Problem .solution .solving .site a span{
     color: white;
     font-size: 30px;
 }
-
 .reveiw{
     background-color: #1A1818;
     color: white;
