@@ -335,6 +335,12 @@ h4{
     padding-bottom: 100px;
     position: relative;
 }
+.publising_txt ul{
+    padding-left: 15px;
+}
+.publising_txt ul li{
+    list-style:square;
+}
 
 .publising_txt .site h3{
     width: 230px;
@@ -357,6 +363,7 @@ h4{
     display: inline-block;
     display: flex;
     align-items: center;
+    margin-top: 10px;
     width: 100%;
     height: 100%;
 }
