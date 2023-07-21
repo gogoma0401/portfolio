@@ -1,0 +1,134 @@
+@charset "UTF-8";
+img{
+    width: 10%;
+}
+body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Noto Sans KR';
+}
+/* header */
+header{
+    font-size: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+header .head{
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .head .logo{
+    width: 80px;
+    object-fit: contain;
+}
+header .head ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+header .head ul li .lang{
+    width: 84px;
+    height: 33px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+header .head ul li .lang li:nth-child(1){
+    position: relative;
+}
+header .head ul li .lang li:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    right: -19px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header .head .menu{
+    width: 30px;
+    object-fit: contain;
+}
+/* intro */
+main .contain{
+    position: relative;
+
+}
+main .contain h1{
+   font-size: 168px;
+   font-weight: 900;
+   text-align: left;
+   margin: 0;
+}
+
+main .contain .parallelogram{
+    display: inline-block;
+    width: 838px;
+    height: 120px;
+    background-color: #D9D9D9;
+    transform: skew(-30deg);
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+}
+main .contain .parallelogram:after{
+    content: "";
+    width: 152px;
+    height: 100%;
+    background-color: #0173CE;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translate(-50%, -50%);
+}
+main .contain .parallelogram2{
+    display: inline-block;
+    width: 1220px;
+    height: 120px;
+    background-color: #D9D9D9;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+}
+main .contain .parallelogram2::before{
+    content: "";
+    width: 65px;
+    height: 100%;
+    background-color: #FB0028;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) skew(-30deg);
+}
+main .contain .parallelogram3{
+    display: inline-block;
+    width: 535px;
+    height: 120px;
+    background-color: #D9D9D9;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+}
+main .contain .parallelogram3::before{
+    content: "";
+    width: 95px;
+    height: 100%;
+    background-color: #FFC627;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%) skew(-30deg);
+}
+main .contain .intro_txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
