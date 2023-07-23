@@ -23,19 +23,17 @@
     <!-- font -->
     <link rel="stylesheet" href=".style/fonts.css">
 
-
-    <!-- swiper css -->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
     <!-- 공통 css -->
    
     <!-- index 디자인 css -->
     <link rel="stylesheet" href="./index.css">
     <!-- script -->
-    <script src="././assets/style/jquery-3.7.0.min.js"></script>
+    <script src="style/jquery-3.7.0.min.js"></script>
     <!-- swiper script -->
-    
-    <!-- 공통 -->
-    <script src="./assets/style/style.js"></script>
+
     <!-- index script -->
     <script defer src="./index.js"></script>
 </head>
@@ -59,19 +57,24 @@
         <!-- intro -->
         <section class="intro">
             <div class="contain">
-                <h1><span>WE</span><span class="parallelogram"></span><span>HAVE </span><span>ONLY</span>
-                    <span class="parallelogram2"></span><span class="yeah">
-                    </span><span class="parallelogram3"></span></span>VICTORY</h1>
+                <div class="inner"><span>WE</span><span class="parallelogram parallelogram1"><video src="./images/video1.mp4" autoplay muted loop controls></video></span><span>HAVE </span><span>ONLY</span>
+                    <span class="parallelogram parallelogram2"><video src="./images/video1.mp4" autoplay muted loop controls></video></span><span class="yeah">
+                    </span><span class="parallelogram parallelogram3"><video src="./images/video1.mp4" autoplay muted loop controls></video></span></span>GLORY</div>
                 <div class="intro_txt">SUWON FC 소식을 공유하며 다양한 이벤트와 활동을 소개합니다. 함께하면 즐거운 시간을 보내실 수 있습니다. 여러분의 관심과 애정을 기대합니다.</div>
                 <!-- svg -->
+            </div>
+            <!-- svg -->
+            <div class="arrow1">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="&#240;&#159;&#166;&#134; icon &#34;arrow forward&#34;">
-                <path id="Vector" d="M17.4165 7.91683L17.4165 25.6026L9.6898 17.876C9.0723 17.2585 8.05897 17.2585 7.44147 17.876C6.82397 18.4935 6.82397 19.491 7.44147 20.1085L17.8756 30.5426C18.4931 31.1601 19.4906 31.1601 20.1081 30.5426L30.5581 20.1243C31.1756 19.5068 31.1756 18.5093 30.5581 17.8918C29.9406 17.2743 28.9431 17.2743 28.3256 17.8918L20.5831 25.6026L20.5831 7.91683C20.5831 7.046 19.8706 6.3335 18.9998 6.3335C18.129 6.3335 17.4165 7.04599 17.4165 7.91683Z" fill="black"/></g>
+                    <g id="&#240;&#159;&#166;&#134; icon &#34;arrow forward&#34;">
+                        <path id="Vector"
+                            d="M17.4165 7.91683L17.4165 25.6026L9.6898 17.876C9.0723 17.2585 8.05897 17.2585 7.44147 17.876C6.82397 18.4935 6.82397 19.491 7.44147 20.1085L17.8756 30.5426C18.4931 31.1601 19.4906 31.1601 20.1081 30.5426L30.5581 20.1243C31.1756 19.5068 31.1756 18.5093 30.5581 17.8918C29.9406 17.2743 28.9431 17.2743 28.3256 17.8918L20.5831 25.6026L20.5831 7.91683C20.5831 7.046 19.8706 6.3335 18.9998 6.3335C18.129 6.3335 17.4165 7.04599 17.4165 7.91683Z"
+                            fill="black" />
+                    </g>
                 </svg>
             </div>
         </section>
-        <section class="blind">
-        </section>
+    
         <section class="big">
             <div class="content">
                 <span class="l">L</span>
@@ -92,40 +95,132 @@
                 <img src="./images/button.png">
             </div>
         </section>
-        <section class="inner">
+        <section class="inner_club">
             <!-- 롤링 -->
-            <div class="rolling">
-
+            <div class="rolling_container">
+                <div class="rolling">
+                    <img src="./images/logo1.png">
+                    <img src="./images/logo3.png">
+                    <img src="./images/logo4.png">
+                    <img src="./images/logo5.png">
+                    <img src="./images/logo6.png">
+                    <img src="./images/logo7.png">
+                    <img src="./images/logo8.png">
+                </div>
             </div>
             <div class="inner_cont">
-                <h2>FOOTBALL CLUB</h2>
-                <div class="btn"><span class="txt">VIEW MORE</span><img src="./images/button.png"></div>
-                
+                <div class="cont_box">
+                    <h2>FOOTBALL CLUB</h2>
+                    <div class="btn">
+                        <span class="txt">VIEW MORE</span>
+                        <img src="./images/button.png">
+                    </div>
+                </div>
+                <div class="txt_tt">
+                    수원의 꽃은 지지 않는다. 어려울수록 같이해 우리는, 수원FC!
+                </div>
                 <!-- 스와이퍼 -->
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/slide1.png"></div>
+                        <div class="swiper-slide"><img src="./images/slide2.png"></div>
+                        <div class="swiper-slide"><img src="./images/slide3.png"></div>  
+                    </div>
+                </div>
+            </div>
+            <div class="text_deco">
+                <h2>SUWON FC</h2>
+                <h2>SUWON FC</h2>
+                <h2>SUWON FC</h2>
             </div>
         </section>
         <section class="ourbusiness">
-            <div class="brand">
-                <div class="item1">
+            <h2>OUR BUSINESS</h2>
+            <ul>
+                <li class="item1">
+                    <span class="num">01</span>
                     <span class="txt">FAN ZONE</span>
-                </div>
-                <div class="item2">
+                    <p>SUWON FC팬들을 위한 특별한 공간, 멋진 경험을 누려보세요!</p>
+                    <div class="poster">
+                        <img src="./images/fan1.jpg">
+                        <img src="./images/fan2.jpg">
+                    </div>
+                </li>
+                <li class="item2">
+                    <span class="num">02</span>
                     <span class="txt">TICKET</span>
-                </div>
-                <div class="item3">
+                    <p>SUWON FC의 진정한 열광을 경험할 수 있는 티켓으로, 풍성한 경기를 즐겨보세요!</p>
+                    <div class="poster">
+                        <img src="./images/ticket1.jpg">
+                        <img src="./images/ticket2.jpg">
+                    </div>
+                </li>
+                <li class="item3">
+                    <span class="num">03</span>
                     <span class="txt">NEWS</span>
-                </div>
-                <div class="item4">
+                    <p>SUWON FC를 더 가까이, 더 빠르게! 최신 소식들을 만나보세요.</p>
+                    <div class="poster">
+                        <img src="./images/news1.jpg">
+                        <img src="./images/news2.jpg">
+                    </div>
+                </li>
+                <li class="item4">
+                    <span class="num">04</span>
                     <span class="txt">MATCH</span>
-                </div>
-            </div>
+                    <p>화끈한 매치가 여러분을 기다리고 있습니다! 열정과 가득한 매치를 함께 즐겨보세요.</p>
+                    <div class="poster">
+                        <img src="./images/match1.jpg">
+                        <img src="./images/match2.jpg">
+                    </div>
+                </li>
+            </ul>
         </section>
         <section class="youtube">
             <h2>YOUTUBE</h2>
             <!-- 유튜브 영상도 슬라이드(스와이퍼?) -->
-            <div class="video">
-
+            <div class="play">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><iframe width="1172.5" height="660"
+                            src="https://www.youtube.com/embed/KriBQVhsgZk?autoplay=1&mute=1&controls=0&loop=1&start=62"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen autoplay></iframe></div>
+                        <div class="swiper-slide"><iframe width="475" height="270"
+                            src="https://www.youtube.com/embed/TqbuF7tlD34?autoplay=1&mute=1&controls=0&loop=1&start=678"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen autoplay></iframe></div>
+                        <div class="swiper-slide"><iframe width="475" height="270" src="https://www.youtube.com/embed/iU5O8FToyw0?autoplay=1&mute=1&controls=0&loop=1&"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen autoplay></iframe></div>
+                    </div> 
+                </div>
+                <div class="swiper mySwiper secondswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><iframe width="475" height="270"
+                                src="https://www.youtube.com/embed/TqbuF7tlD34?autoplay=1&mute=1&controls=0&loop=1&start=678"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen autoplay></iframe></div>
+                        <div class="swiper-slide"><iframe width="475" height="270"
+                                src="https://www.youtube.com/embed/iU5O8FToyw0?autoplay=1&mute=1&controls=0&loop=1&"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen autoplay></iframe></div>
+                        <div class="swiper-slide"><iframe width="1172.5" height="660"
+                                src="https://www.youtube.com/embed/KriBQVhsgZk?autoplay=1&mute=1&controls=0&loop=1&start=62"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen autoplay></iframe></div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+        </section>
             <!-- 롤링2 -->
             <div class="roll"></div>
         </section>
@@ -304,5 +399,12 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {});
+    </script>
+  
 </body>
 </html>

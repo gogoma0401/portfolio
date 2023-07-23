@@ -6,6 +6,7 @@ body{
     height: 100%;
     margin: 0;
     font-family: 'Noto Sans KR';
+    word-break: keep-all;
 }
 /* header */
 header{
@@ -56,18 +57,32 @@ header .head .menu{
     object-fit: contain;
 }
 /* intro */
+main .intro{
+   text-align: center;
+   margin: auto;
+   position: relative;
+   margin-bottom: 220px;
+}
 main .contain{
     position: relative;
-
+    display: flex;
+    justify-content: center;
 }
-main .contain h1{
-   font-size: 168px;
-   font-weight: 900;
-   text-align: left;
-   margin: 0;
+main .contain .inner{
+    width: 1780px;
+    font-size: 168px;
+    font-weight: 900;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.2;
+   
 }
-
 main .contain .parallelogram{
+    margin-top: 20px;
+}
+main .contain .parallelogram1{
     display: inline-block;
     width: 838px;
     height: 120px;
@@ -77,7 +92,7 @@ main .contain .parallelogram{
     margin-right: 30px;
     position: relative;
 }
-main .contain .parallelogram:after{
+main .contain .parallelogram1:after{
     content: "";
     width: 152px;
     height: 100%;
@@ -87,18 +102,25 @@ main .contain .parallelogram:after{
     right: -10%;
     transform: translate(-50%, -50%);
 }
+main .contain .parallelogram1 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
 main .contain .parallelogram2{
     display: inline-block;
-    width: 1220px;
+    width: 1100px;
     height: 120px;
     background-color: #D9D9D9;
-    margin-left: 30px;
+    margin-left: 40px;
     margin-right: 30px;
     position: relative;
 }
+
 main .contain .parallelogram2::before{
     content: "";
-    width: 65px;
+    width: 67px;
     height: 100%;
     background-color: #FB0028;
     position: absolute;
@@ -106,12 +128,18 @@ main .contain .parallelogram2::before{
     left: 0;
     transform: translate(-50%, -50%) skew(-30deg);
 }
+main .contain .parallelogram2 video{
+    width:100%;
+    height: 100%;    
+    object-fit: cover;
+    object-position: center center;
+}
 main .contain .parallelogram3{
     display: inline-block;
-    width: 535px;
+    width: 650px;
     height: 120px;
     background-color: #D9D9D9;
-    margin-left: 30px;
+    margin-left: -250px;
     margin-right: 30px;
     position: relative;
 }
@@ -125,10 +153,355 @@ main .contain .parallelogram3::before{
     left: 0;
     transform: translate(-50%, -50%) skew(-30deg);
 }
+main .contain .parallelogram3 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
 main .contain .intro_txt{
+    font-size: 17px;
+    display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    bottom: 7%;
+    right: 10%;
+    width: 290px;
+    line-height: 1.5;
+}
+/* 화살표 */
+main .arrow1{
+    width: 320px;
+    height: 320px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 15%;
+    bottom: -35%
+
+}
+.blind {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
 }
 
+main .big .content{
+    font-size: 130px;
+}
+
+/* 일단 패스 */
+.inner_club{
+    background-color: #151515;
+    height:1200px;
+}
+.rolling_container {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    overflow: hidden;
+    /* 이미지를 넘어가는 부분을 숨깁니다. */
+    border-bottom: solid 1px #fff;
+}
+
+/* 슬라이드 쇼 이미지 롤링 애니메이션 스타일링 */
+.rolling {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    animation: roll 20s linear infinite;
+    /* 이미지 롤링 애니메이션 적용 */
+   
+}
+
+/* 각 이미지 스타일링 */
+.rolling img {
+    height: 90%;
+    object-fit: contain;
+}
+
+
+/* 이미지 롤링 애니메이션 */
+@keyframes roll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-70%);
+    }
+
+    /* 이미지를 왼쪽으로 한 번 롤링 */
+}
+.inner_club{
+    position: relative;
+}
+.inner_club .inner_cont{
+    position: relative;
+}
+
+.inner_cont .cont_box{
+    margin-top: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.inner_club .inner_cont h2{
+   
+   font-size: 90px;
+   font-weight: 900;
+   color: #fff;
+
+}
+.inner_club .inner_cont .btn{
+    display: flex;
+    align-items: center;
+}
+.inner_club .inner_cont .btn .txt{
+    display: inline-block;
+    border: solid 1px #fff;
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+}
+.inner_club .inner_cont .txt_tt{
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    left: 12%;
+    width: 237px;
+    height: 255px;
+    z-index: 999;
+}
+
+.inner_club .inner_cont .btn img{
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg);
+}
+
+.inner_cont .swiper {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.inner_cont .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_cont .swiper-slide img {
+    display: block;
+    width: 50%;
+    object-fit: cover;
+}
+.text_deco{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20%;
+    z-index: 999;
+   
+}
+.text_deco h2{
+    font-size: 90px;
+    font-weight: 900;
+}
+.text_deco h2:nth-child(1),
+.text_deco h2:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+/* ourbusiness */
+.ourbusiness{
+    margin-top: 125px;
+    
+}
+.ourbusiness h2{
+    margin-top: 125px;
+    font-size: 90px;
+    font-weight: 900;
+    border-bottom: solid 1px #000000;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.ourbusiness ul{
+    width: 80%;
+    margin: auto;
+}
+.ourbusiness ul li{
+    height: 220px;
+    line-height: 220px;
+    border-bottom: 1px solid #000000;
+    font-size: 38px;
+    font-weight: 700;
+    transition: all .5s ease;
+    position: relative;
+    
+}
+.ourbusiness ul li:hover{
+    height: 270px;
+}
+.ourbusiness ul li:hover p{
+    opacity: 1;
+}
+
+.ourbusiness ul li .num{
+    font-size: 17px;
+    margin-right: 30px;
+}
+.ourbusiness ul li p{
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    position: absolute;
+    top: 66%;
+    left: 4%;
+    transition: 0.75s;
+    opacity: 0;
+}
+.ourbusiness ul li .poster {
+    width: 100%;
+    opacity: 0;
+    transition: transform .3s, opacity .3s; /* transform과 opacity에 대해 transition 적용 */
+    position: relative; /* 부모 요소 기준으로 위치 조정하기 위해 relative로 설정 */
+}
+.ourbusiness ul li:hover .poster {
+    opacity: 1;
+    /* hover 시에 이미지의 opacity를 1로 변경하여 이미지가 나타나도록 함 */
+    transform: translateY(-250px) scale(1.2);
+    /* 이미지를 위로 20px 이동시키고 1.2배로 확대하여 나타나도록 함 */
+}
+.ourbusiness ul li .poster img {
+    width: 15%;
+    position: absolute;
+    /* 이미지의 위치를 조정하기 위해 absolute로 설정 */
+    top: 0;
+    /* 이미지의 상단 위치를 부모 요소의 상단에 맞추기 위해 0으로 설정 */
+}
+.ourbusiness ul li .poster img:nth-child(1){
+    transition-delay: .3s;
+    position: absolute;
+}
+.ourbusiness ul li .poster img:nth-child(2) {
+    transition-delay: .4s;
+    position: absolute;
+}
+.ourbusiness ul .item1 .poster img:nth-child(1) {
+    top: -40%;
+    right: 20%;
+    transform: rotate(-15deg);
+}
+
+.ourbusiness ul .item1 .poster img:nth-child(2) {
+    top: 25%;
+    right: 7%;
+    border-radius: 50%;
+}
+
+.ourbusiness ul .item2 .poster img:nth-child(1) {
+    width: 25%;
+    top: 10%;
+    right: 20%;
+    transform: rotate(-15deg);
+}
+
+.ourbusiness ul .item2 .poster img:nth-child(2) {
+ 
+    top: 5%;
+    right: 5%;
+    transform: rotate(15deg);
+}
+
+.ourbusiness ul .item3 .poster img:nth-child(1) {
+    top: 10%;
+    right: 23%;
+    z-index: 99;
+}
+
+.ourbusiness ul .item3 .poster img:nth-child(2) {
+    width: 20%;
+    top: 5%;
+    right: 5%;
+    transform: rotate(-25deg);
+}
+
+.ourbusiness ul .item4 .poster img:nth-child(1) {
+    width: 30%;
+    top: 5%;
+    right: 20%;
+    transform: rotate(15deg);
+    border-radius: 50%;
+    z-index: 99;
+}
+
+.ourbusiness ul .item4 .poster img:nth-child(2) {
+    width: 25%;
+    top: 25%;
+    right: 5%;
+    transform: rotate(-10deg);
+    border-radius: 50%;
+}
+.youtube{
+    margin-top: 300px;
+    position: relative;
+    background-color: #151515;
+    height: 1100px;
+    overflow: hidden;
+}
+
+
+.youtube h2{
+    margin-left: 225px;
+    padding-top: 150px;
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 70px;
+    color: #fff;
+}
+.play{
+    display: flex;
+    align-items:last baseline;
+}
+.swiper {
+    width: 1172.5px;
+    height: 660px;
+    margin-left: 225px;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide{
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0px;
+    overflow: hidden;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.play .secondswiper  {
+    width: 475px;
+    height: 270px;
+}
