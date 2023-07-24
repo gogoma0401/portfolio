@@ -38,80 +38,70 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 /////////////////////////////////////
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-    // .youtube 요소 내부의 슬라이드만 선택하여 Swiper 객체를 생성합니다.
-    var youtubeSwiper = new Swiper(".youtube .mySwiper", {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-            delay: 150000, 
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        allowTouchMove: true, // 터치 이벤트 허용
-        allowMouseEvents: true, // 마우스 이벤트 허용 (추가)
-    });
+let prevScrollY = 0; // 이전 스크롤 위치를 저장하는 변수
+let isScrolling = false;
+let animationStarted = false; // 애니메이션 시작 여부를 저장하는 변수
+let animationFinished = false; // 애니메이션 종료 여부를 저장하는 변수
 
-    var secondSwiper = new Swiper(".youtube .secondswiper", {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-            delay: 150000,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        allowTouchMove: true, // 터치 이벤트 허용
-        allowMouseEvents: true, // 마우스 이벤트 허용 (추가)
-    });
-});
+function handleScroll() {
+    if (!animationStarted) {
+        animationStarted = true;
+        scrollAnimation();
+    }
+    isScrolling = true;
+}
 
-  
+// 초기 호출
+handleScroll();
 
-document.addEventListener("DOMContentLoaded", function () {
-    // 페이지 로딩이 완료되면 미리 로딩할 동영상 iframe을 가져옵니다.
-    var iframeToPreload = document.querySelectorAll(".youtube iframe[loading='lazy']");
-    // 미리 로딩할 동영상 iframe에 src 속성을 설정하여 사전에 로딩합니다.
-    iframeToPreload.forEach(function (iframe) {
-        iframe.src = iframe.dataset.src;
-    });
-});
+// 스크롤 이벤트 리스너 추가
+window.addEventListener('scroll', handleScroll);
 
-let startPoint = 0;
-let endPoint = 0;
+function scrollAnimation() {
+    if (isScrolling) {
+        const contentElements = document.querySelectorAll('.big .content span');
+        const scrollPosition = window.scrollY;
 
-// //////////////////////////////////////////
+        contentElements.forEach((element, index) => {
+            const rect = element.getBoundingClientRect();
+            const elementTop = rect.top + scrollPosition;
+            const elementBottom = elementTop + rect.height;
 
- // 스와이퍼 슬라이드 변경 시 배경색 변경하는 자바스크립트 코드
-    document.addEventListener('DOMContentLoaded', function() {
-      const swiper = new Swiper('.mySwiper', {
-        // 여기에 스와이퍼 설정 옵션을 추가하세요
-        // 필요한 경우 스와이퍼 동작을 커스터마이즈할 수 있습니다.
-      });
+            // 스크롤 위치가 요소의 상단과 하단 사이에 있는지 확인
+            if (scrollPosition >= elementTop && scrollPosition <= elementBottom) {
+                const scrollPercentage = (scrollPosition - elementTop) / (elementBottom - elementTop);
+                // 움직일 거리 설정 (예시로 -40px을 기준으로 움직임)
+                const moveDistance = -40 + (scrollPercentage * 300); // 애니메이션 최대 이동 거리를 300px로 설정
 
-      const swiperWrapper = document.querySelector('.swiper-wrapper');
-      const backgroundColors = ['#FFC0CB', '#FFFF00', '#00FF00']; // 각 슬라이드에 적용할 배경색을 배열로 설정합니다.
+                // 요소에 움직임 적용
+                element.style.transform = `translateX(${moveDistance}px)`;
+                element.style.opacity = '1';
+            } else {
+                // 스크롤 역방향일 때, 원래 위치로 돌아가게 처리
+                if (scrollPosition < prevScrollY && scrollPosition >= elementTop) {
+                    element.style.transform = 'translateX(-10px)';
+                    element.style.opacity = '0';
+                }
+            }
+        });
 
-      swiper.on('slideChange', function() {
-        const activeSlideIndex = swiper.realIndex;
-        if (activeSlideIndex >= 0 && activeSlideIndex < backgroundColors.length) {
-          swiperWrapper.style.backgroundColor = backgroundColors[activeSlideIndex];
-        }
-      });
-    });
+        // 이전 스크롤 위치 갱신
+        prevScrollY = scrollPosition;
+        isScrolling = false;
+    }
 
-
-
-    gsap.registerPlugin(MotionPathPlugin);
-
-
-///////////////////////////////
-
-
-
-
-////////////////////////// 
+    // 애니메이션 종료 여부 확인 후 다음 리페인트 이전에 다시 함수 호출
+    if (!animationFinished) {
+        requestAnimationFrame(scrollAnimation);
+    }
+}

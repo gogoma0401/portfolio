@@ -188,12 +188,6 @@ main .arrow1{
     bottom: -35%
 
 }
-.blind {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    display: flex;
-}
 
 section.big .content {
     width: 100%;
@@ -203,72 +197,51 @@ section.big .content {
     text-align: center;
     position: relative;
     overflow: hidden;
-    
 }
 
+.big .content span {
+    display: inline-block;
+    /* 초기 위치 설정 */
+    transform: translateX(-10px);
+    transition: transform 1s ease, opacity 0.5s ease;
+    /* duration을 0.5초로 변경 */
+    /* 상단 여백 조정을 위해 아래 스타일 추가 */
+    margin-top: 100vh;
+    /* .big 섹션 높이의 절반만큼 상단으로 이동 */
+    position: relative;
+    top: -70%;
+    /* 초기에 숨겨진 상태 */
+    opacity: 0;
+}
 
 .big .content .l {
-    display: inline-block;
-    animation: scaleL 2s ease-in-out;
-}
-
-@keyframes scaleL {
-    0% {
-        transform: scale(20) translateX(-40px);
-        
-    }
-    100% {
-        transform: scaleY(1)translateX(0);
-    }
+    /* 초기 위치 설정 */
+    transform: scale(12, 12) translateX(-10px);
 }
 
 .big .content .e {
-    display: inline-block;
-    animation: scaleE 2s ease-in-out;
-}
-
-@keyframes scaleE {
-    0% {
-        transform: scale(5) translateX(10px);
-        
-    }
-    100% {
-        transform: scaleY(1) translateX(0px);
-    }
+    transform: scale(2) translateY(-150px);
 }
 
 .big .content .t {
-    display: inline-block;
-    animation: scaleT 2s ease-in-out;
-}
-
-@keyframes scaleT {
-    0% {
-        transform: scale(5) translate(-40px); 
-        
-    }
-    100% {
-        transform: scaleY(1) translateX(-40px);
-    }
+    transform: scale(2) translate(100px, 150px);
 }
 
 .big .content .s {
-    display: inline-block;
-    animation: scaleS 2s ease-in-out;
+    transform: scale(2) translate(100px, 150px);
 }
 
-@keyframes scaleS {
-    0% {
-        transform: scale(5) translateX(-40px);
-        
-    }
-    100% {
-        transform: scaleY(1) translateX(-40px); 
-    }
+.big .content .g {
+    transform: scale(2) translate(100px, 150px);
 }
 
+.big .content .i {
+    transform: scale(2) translate(100px, -150px);
+}
 
-
+.big .content .t2 {
+    transform: scale(2) translate(-200px, 150px);
+}
 
 
 main .big .sub{
