@@ -45,9 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 1,
         loop: true,
         autoplay: {
-            delay: 90000, 
+            delay: 150000, 
         },
-        speed: 9000, // 슬라이드 이동 속도를 1초로 설정합니다.
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -60,9 +59,8 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 1,
         loop: true,
         autoplay: {
-            delay: 90000,
+            delay: 150000,
         },
-        speed: 9000, // 다른 슬라이더의 슬라이드 이동 속도를 1.5초로 설정합니다.
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -82,3 +80,38 @@ document.addEventListener("DOMContentLoaded", function () {
         iframe.src = iframe.dataset.src;
     });
 });
+
+let startPoint = 0;
+let endPoint = 0;
+
+// //////////////////////////////////////////
+
+ // 스와이퍼 슬라이드 변경 시 배경색 변경하는 자바스크립트 코드
+    document.addEventListener('DOMContentLoaded', function() {
+      const swiper = new Swiper('.mySwiper', {
+        // 여기에 스와이퍼 설정 옵션을 추가하세요
+        // 필요한 경우 스와이퍼 동작을 커스터마이즈할 수 있습니다.
+      });
+
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
+      const backgroundColors = ['#FFC0CB', '#FFFF00', '#00FF00']; // 각 슬라이드에 적용할 배경색을 배열로 설정합니다.
+
+      swiper.on('slideChange', function() {
+        const activeSlideIndex = swiper.realIndex;
+        if (activeSlideIndex >= 0 && activeSlideIndex < backgroundColors.length) {
+          swiperWrapper.style.backgroundColor = backgroundColors[activeSlideIndex];
+        }
+      });
+    });
+
+
+
+    gsap.registerPlugin(MotionPathPlugin);
+
+
+///////////////////////////////
+
+
+
+
+////////////////////////// 

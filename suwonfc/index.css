@@ -8,6 +8,9 @@ body{
     font-family: 'Noto Sans KR';
     word-break: keep-all;
 }
+.btn{
+    cursor: pointer;
+}
 /* header */
 header{
     font-size: 15px;
@@ -161,13 +164,16 @@ main .contain .parallelogram3 video {
 }
 main .contain .intro_txt{
     font-size: 17px;
+    text-align: left;
     display: inline-block;
     position: absolute;
     bottom: 7%;
-    right: 10%;
+    right: 8%;
     width: 290px;
     line-height: 1.5;
 }
+
+
 /* 화살표 */
 main .arrow1{
     width: 320px;
@@ -189,11 +195,116 @@ main .arrow1{
     display: flex;
 }
 
-main .big .content{
+section.big .content {
+    width: 100%;
+    height: 100vh;
     font-size: 130px;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
 }
 
-/* 일단 패스 */
+
+.big .content .l {
+    display: inline-block;
+    animation: scaleL 2s ease-in-out;
+}
+
+@keyframes scaleL {
+    0% {
+        transform: scale(20) translateX(-40px);
+        
+    }
+    100% {
+        transform: scaleY(1)translateX(0);
+    }
+}
+
+.big .content .e {
+    display: inline-block;
+    animation: scaleE 2s ease-in-out;
+}
+
+@keyframes scaleE {
+    0% {
+        transform: scale(5) translateX(10px);
+        
+    }
+    100% {
+        transform: scaleY(1) translateX(0px);
+    }
+}
+
+.big .content .t {
+    display: inline-block;
+    animation: scaleT 2s ease-in-out;
+}
+
+@keyframes scaleT {
+    0% {
+        transform: scale(5) translate(-40px); 
+        
+    }
+    100% {
+        transform: scaleY(1) translateX(-40px);
+    }
+}
+
+.big .content .s {
+    display: inline-block;
+    animation: scaleS 2s ease-in-out;
+}
+
+@keyframes scaleS {
+    0% {
+        transform: scale(5) translateX(-40px);
+        
+    }
+    100% {
+        transform: scaleY(1) translateX(-40px); 
+    }
+}
+
+
+
+
+
+main .big .sub{
+    margin: auto;
+    text-align: center;
+    width: 630px;
+}
+.c_blue{
+    color: #0173CE;
+}
+main .big .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .big .btn .txt{
+    display: inline-block;
+    border: solid 1px #000000;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+}
+
+
+main .big .btn img{
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg);
+}
+/* 일단 패스 ***************************************************/
+
+
 .inner_club{
     background-color: #151515;
     height:1200px;
@@ -476,32 +587,280 @@ main .big .content{
     margin-bottom: 70px;
     color: #fff;
 }
+.youtube .btn .txt{
+    display: inline-block;
+    border: solid 1px #fff;
+}
 .play{
     display: flex;
     align-items:last baseline;
+    position: relative;
+    
 }
-.swiper {
-    width: 1172.5px;
+.play .swiper {
+    width: 1172px;
     height: 660px;
-    margin-left: 225px;
 }
 
-.mySwiper .swiper-wrapper .swiper-slide{
+.play .mySwiper .swiper-wrapper .swiper-slide{
     position: relative;
     padding-bottom: 56.25%;
     height: 0px;
     overflow: hidden;
 }
 
-.mySwiper .swiper-wrapper .swiper-slide iframe{
+.play .mySwiper .swiper-wrapper .swiper-slide iframe{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
-.play .secondswiper  {
+.play .firstswiper {
+    margin-left: 225px;
+}
+.play .secondswiper {
     width: 475px;
     height: 270px;
 }
+
+.swiper-button-prev{
+    position: absolute;
+    left: 83%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+.swiper-button-next{
+    position: absolute;
+    right: 10%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+.youtube{
+    position: relative;
+}
+.youtube .btn_3{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10%;
+    top: 19%;
+}
+.youtube .btn_3 .txt{
+    display: inline-block;
+    border: solid 1px #fff;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+
+.youtube .btn_3 img{
+    width: 70px;
+    height: 70px;
+    transform: rotate(-45deg);
+}
+
+
+.rolled {
+    height: 90px; 
+    line-height: 90px;
+    overflow: hidden;
+    background-color: #0173CE;
+}
+
+.roll {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    justify-content: space-between;
+}
+
+.roll span {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.shop{
+    position: relative;
+}
+.shop h2{
+    font-size: 90px;
+    font-weight: 900;
+    margin-left: 130px;
+    margin-top: 130px;
+}
+
+.shop .btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 15%;
+}
+.shop .btn .txt{
+    display: inline-block;
+    border: solid 1px #000000;
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+}
+
+.shop .btn img{
+    width: 70px;
+    height: 70px;
+    transform: rotate(-135deg);
+}
+
+.shop .cont{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    place-items: center;
+    
+    
+}
+.shop .cont img{
+    width: 330px;
+    height: 330px;
+}
+.shop .cont .info_box{
+    text-align: center;
+}
+.shop .cont .info_box .product_name .poppin{
+    font-size: 17px;
+}
+.shop .cont .info_box .product_price .ori_price{
+    font-size: 15px;
+}
+.shop .cont .product_cont{
+    width: 360px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.shop .cont .product_cont:hover{
+    background-color: #FB0028;
+    color: #fff;
+}
+.shop .cont .product_cont:nth-child(even):hover{
+    background-color: #FFC627;
+}
+.news{
+    background-color: #151515;
+}
+.news h2{
+    font-size: 90px;
+    font-weight: 900;
+    margin-left: 130px;
+    margin-top: 130px;
+    color: #fff;
+}
+.news ul{
+    display: flex;
+    justify-content: center;
+}
+.news ul li{
+    width: 23.2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.news ul li .txt{
+    margin-top: 15px;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 370px;
+    color: #fff;
+}
+.news ul li img{
+    width: 75%;
+}
+.news ul li:nth-child(3) img{
+    width: 80%;
+}
+.news ul li:nth-child(4) img{
+    width: 80%;
+}
+
+/* footer */
+footer{
+    padding-top: 250px;
+    background-color: #151515;
+    color: #fff;
+    padding-bottom: 200px;
+    position: relative;
+   
+}
+.foot{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 165px;
+}
+.info{
+    font-size: 14px;
+}
+.info ul:nth-child(2){
+    margin-top: 50px;
+}
+.menu{
+    font-size: 22px;
+    display: flex;
+    gap: 70px;
+    
+    
+}
+.menu ul li{
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    filter: brightness(0.8);
+}
+.menu ul li:hover{
+    filter: brightness(1);
+}
+.menu ul li:hover img{
+    opacity: 1;
+}
+
+.menu ul li img{
+    width: 60px;
+    height: 60px;
+    opacity: 0;
+}
+footer svg{
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+.sns{
+    font-size: 14px;
+    font-weight: 900;
+    margin-left: 130px;
+    margin-top: 200px;
+}
+
