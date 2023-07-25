@@ -23,9 +23,14 @@
     <!-- font -->
     <link rel="stylesheet" href=".style/fonts.css">
 
+    <!-- aos js -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
+    <!-- aos js -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- 모션 pat -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
@@ -82,24 +87,32 @@
     
         <section class="big">
             <div class="content">
-                <span class="l">L</span>
-                <span class="e">E</span>
-                <span class="t">T</span>
-                <span class="s">'S</span>
-                <span class="g">G</span>
-                <span class="e">E</span>
-                <span class="t">T</span>
-                <span class="i">I</span>
-                <span class="t2">T</span>
+            <span class="l">L</span>
+            <span class="e">E</span>
+            <span class="t">T</span>
+            <span class="s">'S</span>
+            <span></span>
+            <span class="g">G</span>
+            <span class="e2">E</span>
+            <span class="t2">T</span>
+            <span></span>
+             <span class="i"> I</span>
+            <span class="t2-2">T</span>
             </div>
+        </section>
+
+        <section class="pade" data-aos="fade-up" data-aos-duration="3000">
             <div class="sub">
-                <span class="c_blue">수원FC</span>는 한국축구 역사를 걸어온 팀으로, <span class="c_blue">시민과 팬의 열정적인 지지</span>로 이뤄진 기적적인 질주를 이어가고 있습니다.앞으로도 시민구단으로서 성장하고 자부심을 이어나가며 <span class="c_blue">더 좋은 경기로 보답하겠습니다.</span>
+            <span class="c_blue">수원FC</span>는 한국축구 역사를 걸어온 팀으로, <span class="c_blue">시민과 팬의 열정적인 지지</span>로 이뤄진 기적적인 질주를 이어가고 있습니다.앞으로도 시민구단으로서 성장하고 자부심을 이어나가며 <span class="c_blue">더 좋은 경기로 보답하겠습니다.</span>
             </div>
+            
             <div class="btn">
-                <span class="txt">VIEW MORE</span>
+                <span class="txt"><a href="#">VIEW MORE</a></span>
                 <img src="./images/button.png">
             </div>
-        </se ction>
+            
+        </section>
+
         <section class="inner_club">
             <!-- 롤링 -->
             <div class="rolling_container">
@@ -117,7 +130,7 @@
                 <div class="cont_box">
                     <h2>FOOTBALL CLUB</h2>
                     <div class="btn">
-                        <span class="txt">VIEW MORE</span>
+                        <span class="txt"><a href="#">VIEW MORE</a></span>
                         <img src="./images/button.png">
                     </div>
                 </div>
@@ -182,10 +195,12 @@
             </ul>
         </section>
         <section class="youtube">
-            <h2>YOUTUBE</h2>
-            <div class="btn_3">
-                <span class="txt">VIEW MORE</span>
+            <div class="youtube_name">
+                <h2>YOUTUBE</h2>
+                <div class="btn">
+                <span class="txt"><a href="#">VIEW MORE</a></span>
                 <img src="./images/button.png">
+                </div>
             </div>
             <!-- 유튜브 영상도 슬라이드(스와이퍼?) -->
             <div class="play">
@@ -241,10 +256,12 @@
             </div>
         </section>
         <section class="shop">
-            <h2>SHOP</h2>
-            <div class="btn">
-                <span class="txt">SHOP ALL</span>
-                <img src="./images/button.png">
+            <div class="shop_name">
+                <h2>SHOP</h2>
+                <div class="btn">
+                    <span class="txt"><a href="#">SHOP ALL</a></span>
+                    <img src="./images/button.png">
+                </div>
             </div>
                 <div class="cont">
                     <div class="product_cont">
@@ -434,6 +451,9 @@
     <script>
         var swiper = new Swiper(".mySwiper", {});
     </script>
-  
+    <!-- aos -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
