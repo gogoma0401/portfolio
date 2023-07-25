@@ -114,6 +114,9 @@
         </section>
 
         <section class="inner_club">
+            <div id="custom_cursor" class="custom-cursor">
+                <div class="custom-cursor-icon">DRAG</div>
+            </div>
             <!-- 롤링 -->
             <div class="rolling_container">
                 <div class="rolling">
@@ -155,6 +158,9 @@
         </section>
         <section class="ourbusiness">
             <h2>OUR BUSINESS</h2>
+            <div id="custom_cursor" class="custom-cursor">
+                <div class="custom-cursor-icon">VIEW MORE</div>
+            </div>
             <ul>
                 <li class="item1">
                     <span class="num">01</span>
@@ -195,6 +201,9 @@
             </ul>
         </section>
         <section class="youtube">
+            <div id="custom_cursor" class="custom-cursor">
+                <div class="custom-cursor-icon">cusor</div>
+            </div>
             <div class="youtube_name">
                 <h2>YOUTUBE</h2>
                 <div class="btn">
@@ -241,10 +250,8 @@
                                 allowfullscreen autoplay></iframe></div>
                     </div>
                 </div>
-                <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-                
-                
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
         <section class="rolled">
@@ -378,30 +385,41 @@
                 </div>
         </section>
         <section class="news">
+            <div id="custom_cursor" class="custom-cursor">
+                <div class="custom-cursor-icon">CLILCK</div>
+            </div>
             <h2>News</h2>
             <ul>
                 <li>
-                        <img src="./images/news1.png" alt="뉴스이미지">
-                        <div class="txt"><p class="n_txt">수원시 자원봉사 센터, 수원FC, 수원FC 위민과<span class="line">함께 지역 연대사업 펼친다.</span></p></div>
-                   
+                    <div class="box"><img src="./images/news1.png" alt="뉴스이미지"></div>
+                    
+                    <ul>
+                        <li class="n_txt">수원시 자원봉사 센터, 수원FC, 수원FC 위민과 함께 지역 연대사업 펼친다.</li>
+                    </ul>
                 </li>
+                
                 <li>
+                    <div class="box"><img src="./images/news2_1.png" alt="뉴스이미지"></div>                    
                     
-                        <img src="./images/news2_1.png" alt="뉴스이미지">
-                        <div class="txt"><p class="n_txt">수원 삼성, 강원 제물로 꼴찌탈출 도전<span class="line">...수원FC 광주와 맞대결</span></p></div>
-                   
+                    <ul>
+                        <li class="n_txt">수원 삼성, 강원 제물로 꼴찌탈출 도전 ...수원FC 광주와 맞대결</li>
+                    </ul>
                 </li>
+
                 <li>
+                    <div class="box"><img src="./images/news3.png" alt="뉴스이미지"></div>               
                     
-                        <img src="./images/news3.png" alt="뉴스이미지">
-                        <div class="txt"><p class="n_txt">위기의 수원FC, 주말 전환점 마련 총력</p></div>
-                   
+                    <ul>
+                        <li class="n_txt">위기의 수원FC, 이번주 주말 전환점 마련 총력</li>
+                    </ul>
                 </li>
+
                 <li>
+                    <div class="box"><img src="./images/news5.png" alt="뉴스이미지"></div>
                     
-                        <img src="./images/news5.png" alt="뉴스이미지">
-                        <div class="txt"><p class="n_txt">수원FC 이승우가 공격수 부문 최다득표로 K리그 선발팀 중 ‘팬 일레븐’에 선발됐다.</span></p></div>
-                    
+                    <ul>
+                        <li class="n_txt">수원FC 이승우가 공격수 부문 최다득표로 K리그 선발팀 중 ‘팬 일레븐’에 선발됐다.</span></li>
+                    </ul>
                 </li>
             </ul>
         </section>
@@ -448,6 +466,14 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
     <script>
         var swiper = new Swiper(".mySwiper", {});
     </script>
