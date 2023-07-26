@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,8 +20,6 @@
 
     <!-- reset -->
     <link rel="stylesheet" href="../common/style/reset.css">
-    <!-- font -->
-    <link rel="stylesheet" href=".style/fonts.css">
 
     <!-- aos js -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -29,21 +27,21 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     
-    <!-- aos js -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- 모션 pat -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-    <!-- 공통 css -->
    
+
     <!-- index 디자인 css -->
     <link rel="stylesheet" href="./index.css">
     <!-- script -->
     <script src="style/jquery-3.7.0.min.js"></script>
     
+    <!-- aos js -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="/MotionPathHelper.min.js"></script>
-    <script src="script.js"></script>
+
+    <!-- 알파벳 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
+
     <!-- index script -->
     <script defer src="./index.js"></script>
 </head>
@@ -72,9 +70,7 @@
                     </span><span class="parallelogram parallelogram3"><video src="./images/video1.mp4" autoplay muted loop controls></video></span></span>GLORY</div>
                 <div class="intro_txt">SUWON FC 소식을 공유하며 다양한 이벤트와 활동을 소개합니다. 함께하면 즐거운 시간을 보내실 수 있습니다. 여러분의 관심과 애정을 기대합니다.</div>
                 <!-- svg -->
-            </div>
-            <!-- svg -->
-            <div class="arrow1">
+                <div class="arrow1">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="&#240;&#159;&#166;&#134; icon &#34;arrow forward&#34;">
                         <path id="Vector"
@@ -83,23 +79,15 @@
                     </g>
                 </svg>
             </div>
-        </section>
-    
-        <section class="big">
-            <div class="content">
-            <span class="l">L</span>
-            <span class="e">E</span>
-            <span class="t">T</span>
-            <span class="s">'S</span>
-            <span></span>
-            <span class="g">G</span>
-            <span class="e2">E</span>
-            <span class="t2">T</span>
-            <span></span>
-             <span class="i"> I</span>
-            <span class="t2-2">T</span>
             </div>
+            
         </section>
+  
+            <div class="page">
+        <div class="text">Scroll for cascading text effects!</div>
+        <div class="text text--random" data-scroll="out" data-splitting="">Get'it</div>
+        </div>
+        </div>
 
         <section class="pade" data-aos="fade-up" data-aos-duration="3000">
             <div class="sub">
@@ -481,5 +469,8 @@
     <script>
         AOS.init();
     </script>
+    <!-- 알파벳 철자 작아지는 -->
+    <script src='https://unpkg.com/splitting/dist/splitting.js'></script>
+    <script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script>
 </body>
 </html>

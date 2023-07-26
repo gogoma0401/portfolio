@@ -96,7 +96,7 @@ function rollImages() {
             }
             for (let i = 0; i < rollCount; i++) {
                 const firstImage = images[0];
-                rolling.removeChild(firstImage); // 첫 번째 이미지를 롤링 컨테이너에서 제거합니다.
+            
             }
             // 롤링 애니메이션 다시 시작
             setTimeout(animateRolling, 1000); // 이미지를 빠르게 추가하기 위해 딜레이를 10ms로 설정
@@ -173,4 +173,11 @@ var swiper = new Swiper(".inner_cont .mySwiper", {
 
         window.addEventListener('scroll', handleScroll);
 
-//이미지 보여지는 순서 ourbusiness 
+//알파벳움직이기
+
+Splitting();
+ScrollOut({
+  targets: '.word',
+    scrollingElement: '.page'
+});
+  

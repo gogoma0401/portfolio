@@ -193,7 +193,7 @@ main .intro{
    text-align: center;
    margin: auto;
    position: relative;
-   margin-bottom: 50px;
+    height: 100vh;
 }
 main .contain{
     position: relative;
@@ -304,7 +304,6 @@ main .contain .intro_txt{
 .contain video {
     pointer-events: none;
 }
-
 /* 화살표 */
 main .arrow1{
     width: 320px;
@@ -317,194 +316,85 @@ main .arrow1{
     position: absolute;
     right: 15%;
     bottom: -35%
-
-}
-.big .content {
-    width: 100%;
-    height: 100vh;
-    font-size: 130px;
-    font-weight: 900;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
-.big .content span {
-    display: inline-block;
-    /* 초기 위치 설정 */
-    margin-top: 100vh;
-    /* .big 섹션 높이의 절반만큼 상단으로 이동 */
-    position: relative;
-    top: -50%;
-    /* 초기에 숨겨진 상태 */
-    opacity: 0;
-    }
+/* test */
 
-.big .content span{
-            animation-duration: 5s;
-            animation-timing-function: ease-in-out;
-            animation-fill-mode: forwards;
-            opacity: 0;
+.page {
+  height: 100vh;
+  overflow: auto;
+}
+.text {
+  align-items: center;
+  display: flex;
+  font-size: 130px;
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  width: 100vw;
 }
 
-.big .content .l {
-            animation-name: slide-in-l;
+
+.text .char {
+  display: inline-block;
+  -webkit-animation-delay: calc(0.5s + var(--char-index) * 0.2s);
+          animation-delay: calc(0.5s + var(--char-index) * 0.2s); 
+  transition: all 0.5s calc(0.5s + var(--char-index) * 0.2s);
+}
+.text--enter [data-scroll='out'] .char {
+  opacity: 0;
+  -webkit-transform: translate(0, -150%);
+          transform: translate(0, -150%);
+}
+.text--enter .char {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(1) {
+  -webkit-transform: translateX(-1000%) translateY(500%) scale(14);
+          transform: translateX(-1000%) translateY(500%) scale(14);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(2) {
+  -webkit-transform: translateX(-243%) translateY(-79%);
+          transform: translateX(-243%) translateY(-79%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(3) {
+  -webkit-transform: translateX(80%) translateY(-303%);
+          transform: translateX(80%) translateY(-303%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(4) {
+  -webkit-transform: translateX(-93%) translateY(118%);
+          transform: translateX(-93%) translateY(118%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(5) {
+  -webkit-transform: translateX(72%) translateY(304%);
+          transform: translateX(72%) translateY(304%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(6) {
+  -webkit-transform: translateX(204%) translateY(-207%);
+          transform: translateX(204%) translateY(-207%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(7) {
+  -webkit-transform: translateX(65%) translateY(-207%);
+          transform: translateX(65%) translateY(-207%);
 }
 
-.big .content .e {
-            animation-name: slide-in-e;
+.text--random [data-scroll='out'] .char:nth-of-type(8) {
+  -webkit-transform: translateX(58%) translateY(307%);
+          transform: translateX(58%) translateY(307%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(9) {
+  -webkit-transform: translateX(204%) translateY(107%);
+          transform: translateX(204%) translateY(107%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(10) {
+  -webkit-transform: translateX(44%) translateY(330%);
+          transform: translateX(44%) translateY(330%);
 }
 
-.big .content .t {
-            animation-name: slide-in-t;
-}
 
-.big .content .s {
-            animation-name: slide-in-s;
-}
-
-        .big .content .g {
-            animation-name: slide-in-g;
-        }
-
-        .big .content .e2 {
-            animation-name: slide-in-e2;
-        }
-
-        .big .content .t2 {
-            animation-name: slide-in-t2;
-        }
-
-        .big .content .i {
-            animation-name: slide-in-i;
-        }
-
-        .big .content .t2-2 {
-            animation-name: slide-in-t2-2;
-        }
-
-        @keyframes slide-in-l {
-            from {
-                transform: scale(14, 14) translateX(-10px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translateX(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-e {
-            from {
-                transform: scale(2) translateY(-150px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-t {
-            from {
-                transform: scale(2) translate(100px, 150px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-s {
-            from {
-                transform: scale(2) translate(100px, 150px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-g {
-            from {
-                transform: scale(2) translate(100px, 150px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-e2 {
-            from {
-                transform: scale(2) translate(50px, 100px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-t2 {
-            from {
-                transform: scale(2) translate(0, -300px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-i {
-            from {
-                transform: scale(2) translate(100px, -150px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slide-in-t2-2 {
-            from {
-                transform: scale(2) translate(-200px, 150px);
-                opacity: 0;
-            }
-            to {
-                transform: scale(1, 1) translate(0, 0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-main .pade {
-    height: 300px;
-}
-main .pade .sub{
-    margin: auto;
-    text-align: center;
-    width: 630px;
-}
-.c_blue{
-    color: #0070CD;
-}
-
-main .pade .btn img{
-    transform: rotate(-45deg);
-}
 /* 일단 패스 ***************************************************/
 
 
