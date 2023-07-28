@@ -4,7 +4,6 @@ img{
 }
 body{
     position: relative;
-    height: 100%;
     margin: 0;
     font-family: 'Noto Sans KR';
     word-break: keep-all;
@@ -138,6 +137,9 @@ body{
     height: 70px;
 }
 
+.c_blue{
+    color: #00396F;
+}
 
 /* header */
 header{
@@ -193,7 +195,7 @@ main .intro{
    text-align: center;
    margin: auto;
    position: relative;
-    height: 100vh;
+   height: 100vh;
 }
 main .contain{
     position: relative;
@@ -321,18 +323,19 @@ main .arrow1{
 /* test */
 
 .page {
-  height: 100vh;
+
+  height: 100vh; 
   overflow: auto;
 }
-.text {
+.text--random{
+  height: 100vh;
   align-items: center;
   display: flex;
   font-size: 130px;
-  height: 100vh;
   justify-content: center;
   overflow: hidden;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 
@@ -398,7 +401,24 @@ main .arrow1{
 /* 일단 패스 ***************************************************/
 
 
+
+
+
+.pade{
+    margin: auto;
+}
+.pade .sub{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
+}
+.pade .btn{
+    margin-left: 55px;
+}
+
 .inner_club{
+    margin-top: 100px;
     background-color: #151515;
     height:1200px;
 }
@@ -416,30 +436,29 @@ main .arrow1{
     display: flex;
     align-items: center;
     gap: 80px;
-    animation: roll 20s linear infinite;
+    animation: roll 60s linear infinite;
     /* 이미지 롤링 애니메이션 적용 */
    
 }
 
 /* 각 이미지 스타일링 */
+/* CSS 코드 */
 .rolling img {
-    height: 90%;
+    height: 40px;
     object-fit: contain;
 }
-
 
 /* 이미지 롤링 애니메이션 */
 @keyframes roll {
     0% {
         transform: translateX(0);
     }
-
     100% {
-        transform: translateX(-70%);
+        transform: translateX(calc(-100% * 7));
     }
-
-    /* 이미지를 왼쪽으로 한 번 롤링 */
 }
+
+
 .inner_club{
     position: relative;
 }

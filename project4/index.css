@@ -304,7 +304,7 @@ h4{
 
 
 .design .container .colors{
-    width: 55%;
+    width: 58%;
     display: flex;
     justify-content: space-around;
     margin-bottom: 70px;
@@ -333,6 +333,7 @@ h4{
 .design .container .colors .color4 {
     background-color: #00396F;
     color: white;
+    margin-right: 60px;
 }
 .design .container .colors .color5 {
     background-color: #151515;

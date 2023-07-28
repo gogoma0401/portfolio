@@ -99,12 +99,15 @@ function rollImages() {
             
             }
             // 롤링 애니메이션 다시 시작
-            setTimeout(animateRolling, 1000); // 이미지를 빠르게 추가하기 위해 딜레이를 10ms로 설정
+            setTimeout(animateRolling, 6000); // 딜레이 값을 2초로 변경하여 느리게 롤링되도록 설정
         });
     }
 
     animateRolling(); // 애니메이션 시작
 }
+
+
+
 
 var swiper = new Swiper(".inner_cont .mySwiper", {
     loop: true, // 슬라이드 루프 설정
@@ -178,6 +181,6 @@ var swiper = new Swiper(".inner_cont .mySwiper", {
 Splitting();
 ScrollOut({
   targets: '.word',
-    scrollingElement: '.page'
+  scrollingElement: '.page'
 });
   
