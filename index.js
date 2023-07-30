@@ -37,8 +37,8 @@ function hideOtherProjects(currentProjectElement) {
   });
 }
 
-const imageElements1 = document.querySelectorAll('.image0, .image5, .image10, .image15');
-const projectElement1 = document.querySelector('.project2');
+const imageElements1 = document.querySelectorAll('.image1, .image6, .image11, .image16');
+const projectElement1 = document.querySelector('.project1');
 
 imageElements1.forEach((imageElement) => {
   imageElement.addEventListener('mouseenter', () => {
@@ -46,8 +46,8 @@ imageElements1.forEach((imageElement) => {
   });
 });
 
-const imageElements2 = document.querySelectorAll('.image1, .image6, .image11, .image16');
-const projectElement2 = document.querySelector('.project3');
+const imageElements2 = document.querySelectorAll('.image2, .image7, .image12, .image17');
+const projectElement2 = document.querySelector('.project2');
 
 imageElements2.forEach((imageElement) => {
   imageElement.addEventListener('mouseenter', () => {
@@ -55,8 +55,8 @@ imageElements2.forEach((imageElement) => {
   });
 });
 
-const imageElements3 = document.querySelectorAll('.image2, .image7, .image12, .image17');
-const projectElement3 = document.querySelector('.project4');
+const imageElements3 = document.querySelectorAll('.image3, .image8, .image13, .image18');
+const projectElement3 = document.querySelector('.project3');
 
 imageElements3.forEach((imageElement) => {
   imageElement.addEventListener('mouseenter', () => {
@@ -64,8 +64,8 @@ imageElements3.forEach((imageElement) => {
   });
 });
 
-const imageElements4 = document.querySelectorAll('.image3, .image8, .image13, .image18');
-const projectElement4 = document.querySelector('.project5');
+const imageElements4 = document.querySelectorAll('.image4, .image9, .image14, .image19');
+const projectElement4 = document.querySelector('.project4');
 
 imageElements4.forEach((imageElement) => {
   imageElement.addEventListener('mouseenter', () => {
@@ -73,8 +73,8 @@ imageElements4.forEach((imageElement) => {
   });
 });
 
-const imageElements5 = document.querySelectorAll('.image4, .image9, .image14, .image19');
-const projectElement5 = document.querySelector('.project1');
+const imageElements5 = document.querySelectorAll('.image5, .image10, .image15, .image20');
+const projectElement5 = document.querySelector('.project5');
 
 imageElements5.forEach((imageElement) => {
   imageElement.addEventListener('mouseenter', () => {
@@ -108,3 +108,18 @@ imageElements5.forEach((imageElement) => {
     }
     updateTime();
 
+
+  // 이벤트 리스너를 등록하여 이미지를 클릭하면 해당 이미지의 링크로 이동하도록 합니다.
+  const imageElements = document.querySelectorAll('.won .image');
+
+imageElements.forEach((imageElement) => {
+  imageElement.addEventListener('click', () => {
+    const linkElement = imageElement.querySelector('a');
+    if (linkElement) {
+      const link = linkElement.getAttribute('href');
+      if (link) {
+        window.location.href = link;
+      }
+    }
+  });
+});

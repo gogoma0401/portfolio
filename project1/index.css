@@ -152,7 +152,7 @@ main .head_line{
 }
 main .head_line .txt li:nth-child(1){
     font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-medium';
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 }
 main .head_line .txt li:nth-child(2) {
@@ -179,14 +179,21 @@ main .head_line .sub li ul li{
 }
 
 h2{
-    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
+    font-size: 48px;
     font-weight: bold;
-    font-size: 54px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
     display: inline-block; 
     position: relative;
     
 }
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'LINESeedKR-Bd';
+}
+
 
 .highlight{
   display: inline-block; 
@@ -205,13 +212,9 @@ h2{
   transition: 0.2s all;
 }
 
-
-h3{
-    font-size: 32px;
-    margin-bottom: 15px;
-}
 p{
-    font-size: 24px;
+    font-size: 22px;
+    line-height: 1.7;
 }
 .next_line{
     display: block;
@@ -251,11 +254,15 @@ main .overview p:nth-of-type(3){
 
 main .design {
     margin-left: 334px;
-    font-size: 30px;
+    font-size: 22px;
+}
+main .design h2{
+    margin-bottom: 100px;
 }
 main .design div{
     margin-bottom: 100px;
 }
+
 main .design .keyword ul{
     display: flex;
     gap: 40px;
@@ -273,7 +280,7 @@ main .design .responsive ul{
     margin-bottom: 10px;
 }
 main .design .responsive ul li ul{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 main .design .colors .container{

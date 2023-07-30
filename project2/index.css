@@ -138,7 +138,7 @@ main .head_line{
 }
 main .head_line .txt li:nth-child(1){
     font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-medium';
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
 }
 main .head_line .txt li:nth-child(2) {
@@ -249,6 +249,8 @@ h4{
 }
 .timeline img{
     margin-left: 330px;
+    width: 60%;
+    
 }
 .guide{
     margin-top: 160px;
@@ -261,11 +263,11 @@ h4{
 }
 
 .guide .vision{
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 
 .guide .keyword{
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 .guide .keyword .txt{
     display: flex;
@@ -276,7 +278,7 @@ h4{
     width: 40%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 
 .guide .container .colors .color{
@@ -302,7 +304,7 @@ h4{
 }
 
 .type{
-    margin-bottom: 70px;
+    margin-bottom: 150px;
 }
 
 .type h4{
@@ -487,21 +489,20 @@ main .tobe .cir .circle1 h4{
 .wireframe h2{
     margin-bottom: 80px;
 }
+.wireframe img{
+    width: 80%;
+}
 
 .prototype{
     margin-left: 330px;
     margin-bottom: 160px;
 }
 
-.prototype h2{
-    margin-bottom: 80px;
-}
-
 .prototype h3{
     margin-bottom: 70px;
 }
 .prototype p{
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 110px;
 }
 
@@ -515,7 +516,7 @@ main .tobe .cir .circle1 h4{
     grid-template-columns: repeat(2, 1fr);
 }
 .prototype img{
-    width: 200px;
+    width: 180px;
     object-fit: cover;
     margin-right: 50px;
     margin-bottom: 70px;
@@ -526,18 +527,19 @@ main .tobe .cir .circle1 h4{
 .review{
     background-color: #1A1818;
     color: white;
-    height: 1100px;
+    height: 1200px;
 }
 
 .review .lower{
-    padding-top: 200px;
+    padding-top: 150px;
     margin-left: 330px;
+    margin-bottom: 0;
     word-break: keep-all;
 }
 .review .lower h3{
     color: #2AF563;
     margin-bottom: 30px;
-    margin-top: 80px;
+    margin-top: 150px;
 }
 .review .lower p{
     font-family: 'LINESeedKR-Rg';
@@ -548,9 +550,11 @@ main .tobe .cir .circle1 h4{
 }
 
 main .veiw{
+    margin-top: 0;
+   height: 500px;
    position: relative;
    margin: auto;
-   padding-bottom: 400px;
+   padding-bottom: 40px;
    background-color: #1A1818;
 }
 main .veiw h2{

@@ -193,35 +193,33 @@ main .head_line .circle_txt{
 main .folio{
   position: relative;
 }
-main .circleCarousel .won .image:nth-child(0),
-main .circleCarousel .won .image:nth-child(5),
-main .circleCarousel .won .image:nth-child(10),
-main .circleCarousel .won .image:nth-child(15){
-  background: url(./images/project1.jpg) no-repeat center center/contain;
-}
 
 main .circleCarousel .won .image:nth-child(1),
 main .circleCarousel .won .image:nth-child(6),
 main .circleCarousel .won .image:nth-child(11),
-main .circleCarousel .won .image:nth-child(16){
-  background: url(./images/project2.jpg) no-repeat center center/contain;
+main .circleCarousel .won .image:nth-child(16) {
+  background: url(./images/project1.jpg) no-repeat center center/contain;
 }
-main .circleCarousel .won .image:nth-child(2),
-main .circleCarousel .won .image:nth-child(7),
-main .circleCarousel .won .image:nth-child(12),
-main .circleCarousel .won .image:nth-child(17){
-  background: url(./images/project3.jpg) no-repeat center center/contain;
-}
+
+
 main .circleCarousel .won .image:nth-child(3),
 main .circleCarousel .won .image:nth-child(8),
 main .circleCarousel .won .image:nth-child(13),
-main .circleCarousel .won .image:nth-child(18){
-  background: url(./images/project4.jpg) no-repeat center center/contain;
+main .circleCarousel .won .image:nth-child(18) {
+  background: url(./images/project2.jpg) no-repeat center center/contain;
 }
+
 main .circleCarousel .won .image:nth-child(4),
 main .circleCarousel .won .image:nth-child(9),
 main .circleCarousel .won .image:nth-child(14),
-main .circleCarousel .won .image:nth-child(19){
+main .circleCarousel .won .image:nth-child(19) {
+  background: url(./images/project4.jpg) no-repeat center center/cover;
+}
+
+main .circleCarousel .won .image:nth-child(5),
+main .circleCarousel .won .image:nth-child(10),
+main .circleCarousel .won .image:nth-child(15),
+main .circleCarousel .won .image:nth-child(20) {
   background: url(./images/project5.jpg) no-repeat center center/contain;
 }
 
@@ -312,12 +310,11 @@ main .information{
 }
 
 main .information h1{
-  font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-blackitalic';
+  font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
   font-weight: bold;
-  font-style: italic;
   color: white;
   margin: 0;
-  margin-left: 140px;
+  margin-left: 190px;
   margin-bottom: 30px;
   padding-top: 100px;
   font-size: 96px;
@@ -335,9 +332,8 @@ main .information .skills ul{
 
 
 main .information .skills ul li{
-  font-family: 'FMiConv.com__Fontspring-DEMO-tghaidogrotesk-blackitalic';
+  font-family: 'FMiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
   font-weight: bold;
-  font-style: italic;
   color: #2AF563;
   font-size: 36px;
   display: flex;
