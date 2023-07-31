@@ -202,6 +202,13 @@ main .circleCarousel .won .image:nth-child(16) {
 }
 
 
+main .circleCarousel .won .image:nth-child(2),
+main .circleCarousel .won .image:nth-child(7),
+main .circleCarousel .won .image:nth-child(12),
+main .circleCarousel .won .image:nth-child(17) {
+  background: url(./images/project6.jpg) no-repeat center center/contain;
+}
+
 main .circleCarousel .won .image:nth-child(3),
 main .circleCarousel .won .image:nth-child(8),
 main .circleCarousel .won .image:nth-child(13),

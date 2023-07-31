@@ -540,8 +540,6 @@ main .veiw h2 a{
 main .veiw h2:hover{
     background-color: #2AF563;
     color: #2AF563;
-    
-    border-radius: 40%;
 }
 main .veiw h2:hover a{
     color: #1A1818;
