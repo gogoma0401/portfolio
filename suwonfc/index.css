@@ -322,80 +322,64 @@ main .arrow1{
 
 /* test */
 
-.page {
+.animation {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-  height: 100vh; 
-  overflow: auto;
-}
-.text--random{
-  height: 100vh;
-  align-items: center;
-  display: flex;
-  font-size: 130px;
-  justify-content: center;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-}
+  .animation div {
+    font-size: 135px;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+  }
 
 
-.text .char {
-  display: inline-block;
-  -webkit-animation-delay: calc(0.5s + var(--char-index) * 0.2s);
-          animation-delay: calc(0.5s + var(--char-index) * 0.2s); 
-  transition: all 0.5s calc(0.5s + var(--char-index) * 0.2s);
-}
-.text--enter [data-scroll='out'] .char {
-  opacity: 0;
-  -webkit-transform: translate(0, -150%);
-          transform: translate(0, -150%);
-}
-.text--enter .char {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(1) {
-  -webkit-transform: translateX(-1000%) translateY(500%) scale(14);
-          transform: translateX(-1000%) translateY(500%) scale(14);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(2) {
-  -webkit-transform: translateX(-243%) translateY(-79%);
-          transform: translateX(-243%) translateY(-79%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(3) {
-  -webkit-transform: translateX(80%) translateY(-303%);
-          transform: translateX(80%) translateY(-303%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(4) {
-  -webkit-transform: translateX(-93%) translateY(118%);
-          transform: translateX(-93%) translateY(118%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(5) {
-  -webkit-transform: translateX(72%) translateY(304%);
-          transform: translateX(72%) translateY(304%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(6) {
-  -webkit-transform: translateX(204%) translateY(-207%);
-          transform: translateX(204%) translateY(-207%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(7) {
-  -webkit-transform: translateX(65%) translateY(-207%);
-          transform: translateX(65%) translateY(-207%);
-}
+  .e1 {
+    animation-delay: 2s;
+  }
+  .t1 {
+    animation-delay: 4s;
+   }
+   .s {
+    animation-delay: 6s;
+    margin-right: 40px;
+   }
 
-.text--random [data-scroll='out'] .char:nth-of-type(8) {
-  -webkit-transform: translateX(58%) translateY(307%);
-          transform: translateX(58%) translateY(307%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(9) {
-  -webkit-transform: translateX(204%) translateY(107%);
-          transform: translateX(204%) translateY(107%);
-}
-.text--random [data-scroll='out'] .char:nth-of-type(10) {
-  -webkit-transform: translateX(44%) translateY(330%);
-          transform: translateX(44%) translateY(330%);
-}
+  .g {
+    animation-delay: 7s;
+  }
+
+  .e {
+    animation-delay: 7s;
+  }
+
+  .t {
+    animation-delay: 8s;
+    margin-right: 40px;
+  }
+
+  .i {
+    animation-delay: 8s;
+  }
+
+  .t2 {
+    animation-delay: 8s;
+  }
+
+  .T:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+
 
 
 /* 일단 패스 ***************************************************/

@@ -176,11 +176,3 @@ var swiper = new Swiper(".inner_cont .mySwiper", {
 
         window.addEventListener('scroll', handleScroll);
 
-//알파벳움직이기
-
-Splitting();
-ScrollOut({
-  targets: '.word',
-  scrollingElement: '.page'
-});
-  
