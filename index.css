@@ -227,7 +227,7 @@ main .circleCarousel .won .image:nth-child(5),
 main .circleCarousel .won .image:nth-child(10),
 main .circleCarousel .won .image:nth-child(15),
 main .circleCarousel .won .image:nth-child(20) {
-  background: url(./images/project5.jpg) no-repeat center center/contain;
+  background: url(./images/project3.jpg) no-repeat center center/contain;
 }
 
 main .circleCarousel .won .image{
