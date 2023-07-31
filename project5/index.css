@@ -41,9 +41,6 @@ html {
     scroll-behavior: smooth;
 }
 
-html, body {
-	height: 100%;
-}
 a {
     color: black;
     text-decoration: none;
@@ -57,7 +54,7 @@ header {
     right: 0;
     margin: auto;
     background-color: white;
-    z-index: 999;
+    z-index: 9999;
 }
 
 header ul {
@@ -120,24 +117,38 @@ header ul li .gnb li::after {
 header ul li:nth-child(3):hover {
     background-color: black;
 }
-header ul li:nth-child(3):hover a{
+
+header ul li:nth-child(3):hover a {
     color: white;
 }
 
-
 main {
     font-family: 'LINESeedKR-Rg';
+    margin-top: 100px;
 }
+
 
 main .box{
     margin: auto;
-    margin-top: 160px;
+    text-align: center;
+    margin-bottom: 100px;
+    position: relative;
+}
+main .box img{
+    width: 85%;
+   filter: brightness(10%);
 }
 
 main .head_line{
     display: flex;
     justify-content: center;
     gap: 390px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 999;
 }
 main .head_line .txt li:nth-child(1){
     font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-medium';
@@ -166,39 +177,27 @@ main .head_line .sub li ul li{
     font-size: 20px;
     
 }
-/* 메인 이미지 */
-.main_img{
-    margin-top: 100px;
-    text-align: center;
-}
-.main_img img{
-    width: 200px;
-    margin-right: 80px;
-    object-fit: contain;
-}
-
-/*기본 폰트크기 설정*/
 
 h2{
     font-size: 48px;
+    font-weight: bold;
     margin-bottom: 30px;
     font-family: 'MiConv.com__Fontspring-DEMO-tghaidogrotesk-black';
-    font-weight: bold;
+    display: inline-block; 
+    position: relative;
+    
 }
 
-h3{
+h3 {
     font-size: 28px;
     margin-bottom: 15px;
     font-family: 'LINESeedKR-Bd';
 }
-h4{
-    font-size: 22px;
-}
+
 
 .highlight{
   display: inline-block; 
   position: relative;
-  
 }
 .highlight:after{
   content:"";
@@ -213,386 +212,180 @@ h4{
   transition: 0.2s all;
 }
 
-/* body */
+p{
+    font-size: 22px;
+    line-height: 1.7;
+}
+.next_line{
+    display: block;
+}
+main .overview{
+    margin-left: 334px;
+    margin-bottom: 150px;
+    word-break: keep-all;
+}
+main .overview p{
+    width: 970px;
+}
+main .overview p:nth-of-type(2){
+    margin-top: 10px;
+  
+}
+main .overview p:nth-of-type(3){
+    margin-top: 10px; 
+}
+.highlight2{
+  display: inline-block; 
+  position: relative;
+}
+.highlight2:after{
+  content:"";
+  width:100%;
+  height: 13px;
+  display: inline-block;
+  background: #fdefa1;
+  position: absolute;
+  bottom:10px;
+  left:0;
+  z-index:-1;
+  transition: 0.2s all;
+}
 
-.overview{
-    margin-top: 200px;
-    margin-left: 330px;
+
+main .design {
+    margin-left: 334px;
+    font-size: 22px;
+}
+main .design h2{
     margin-bottom: 100px;
 }
-.inspection{
-    margin-left: 330px;
+main .design div{
     margin-bottom: 100px;
 }
-.inspection>ul{
-    width: 70%;
+
+main .design .keyword ul{
+    display: flex;
+    gap: 40px;
+}
+main .design .keyword ul li{
+    font-size: 24px;
+}
+main .design .responsive{
+    width: 500px;
+}
+main .design .responsive ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 28px;
-    font-family: 'LINESeedKR-Bd';
+    margin-bottom: 10px;
 }
-.inspection ul>li>ul>li{
-    margin-top: 15px;
-    font-size: 22px;
-    font-family: 'LINESeedKR-Rg';
-}
-
-.timeline{
-    background-color: #1A1818;
-    height: 650px;
-    
-}
-.timeline h2{
-    text-align: left;
-    padding-top: 100px;
-    margin-left: 330px;
-    margin-bottom: 100px;
-    color: white;
-}
-.timeline img{
-    margin-left: 330px;
-    width: 60%;
-    
-}
-.guide{
-    margin-top: 160px;
-    margin-left: 330px;
-    margin-bottom: 160px;
-}
-
-.guide h2{
-    margin-bottom: 100px;
-}
-
-.guide .vision{
-    margin-bottom: 150px;
-}
-
-.guide .keyword{
-    margin-bottom: 150px;
-}
-.guide .keyword .txt{
-    display: flex;
-    gap: 80px;
-}
-
-.guide .container .colors{
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 150px;
-}
-
-.guide .container .colors .color{
-   width: 150px; height: 150px;
-}
-.guide .container .colors .color1{
-    background-color: #6B99CF;
-}
-.guide .container .colors .color2{
-    background-color: #F9F2EB;
-}
-.guide .container .colors .color3{
-    background-color: #222222;
-    color: white;
-}
-.guide .container .colors .color ul{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.type{
-    margin-bottom: 150px;
-}
-
-.type h4{
-    margin-bottom: 15px;
-}
-.tobe{
-    margin-bottom: 160px;
-    height: 690px;
-    background-color: #1A1818;
-    color: white;
-}
-
-main .tobe{
-    position: relative;
-}
-/*원 1*/
-main .tobe .cir1 .circle{
-  width: 480px;
-  height: 240px;
-  border-radius: 50%;
-  border: #2AF563 solid 1px;
-  position: absolute;
-  top: 14%; left: 52%;
-  transform: translate(-50%,-50%);
-}
-main .tobe .cir .circle{
-  transform:rotate(6deg);
-  animation: move1 1s ease infinite;
-}
-
-main .tobe .cir .circle2{
-  transform:rotate(10deg);
-  animation: move2 1s ease infinite;
-}
-/*원 2*/
-main .tobe .cir2 .circle{
-  width: 340px;
-  height: 140px;
-  border-radius: 50%;
-  border: #2AF563 solid 1px;
-  position: absolute;
-  top: 40%; left: 20%;
-  transform: translate(-50%,-50%);
-}
-main .tobe .cir2 .circle{
-  transform:rotate(-6deg);
-  animation: move3 3s ease infinite;
-}
-
-main .tobe .cir2 .circle2{
-  transform:rotate(-2deg);
-  animation: move4 3s ease infinite;
-}
-/*원 3*/
-main .tobe .cir3 .circle{
-  width: 360px;
-  height: 150px;
-  border-radius: 50%;
-  border: #2AF563 solid 1px;
-  position: absolute;
-  bottom: 11%; right: 40%;
-  transform: translate(-50%,-50%);
-}
-main .tobe .cir3 .circle{
-  transform:rotate(-3deg);
-  animation: move5 1s ease infinite;
-}
-
-main .tobe .cir3 .circle2{
-  transform:rotate(1deg);
-  animation: move6 1s ease infinite;
-}
-
-@keyframes move1{
-  0%{
-    transform:rotate(6deg);
-  }
-  50%{
-    transform:rotate(9deg);
-  }
-  100%{
-    transform:rotate(6deg);
-  }
-}
-@keyframes move2{
-  0%{
-    transform:rotate(10deg);
-  }
-  25%{
-    transform:rotate(7deg);
-  }
-  50%{
-    transform:rotate(5deg);
-  }
-  75%{
-    transform:rotate(7deg);
-  }
-  100%{
-    transform:rotate(10deg);
-  }
-}
-
-@keyframes move3{
-  0%{
-    transform:rotate(-6deg);
-  }
-  50%{
-    transform:rotate(-9deg);
-  }
-  100%{
-    transform:rotate(-6deg);
-  }
-}
-@keyframes move4{
-  0%{
-    transform:rotate(-2deg);
-  }
-  25%{
-    transform:rotate(-6deg);
-  }
-  50%{
-    transform:rotate(-9deg);
-  }
-  75%{
-    transform:rotate(-6deg);
-  }
-  100%{
-    transform:rotate(-2deg);
-  }
-}
-
-@keyframes move5{
-  0%{
-    transform:rotate(3deg);
-  }
-  50%{
-    transform:rotate(-3deg);
-  }
-  100%{
-    transform:rotate(3deg);
-  }
-}
-@keyframes move6{
-  0%{
-    transform:rotate(1deg);
-  }
-  25%{
-    transform:rotate(-3deg);
-  }
-  50%{
-    transform:rotate(-6deg);
-  }
-  75%{
-    transform:rotate(-3deg);
-  }
-  100%{
-    transform:rotate(1deg);
-  }
-}
-
-main .tobe .cir .circle1 h4{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+main .design .responsive ul li ul{
     font-size: 20px;
 }
 
-
-.tobe h2{
-    padding-top: 100px;
-    margin-left: 330px;
-}
-.tobe h3{
-    margin-bottom: 80px;
-}
-
-.wireframe{
-    margin-left: 330px;
-    margin-bottom: 160px;
-}
-.wireframe h2{
-    margin-bottom: 80px;
-}
-.wireframe img{
-    width: 80%;
-}
-
-.prototype{
-    margin-left: 330px;
-    margin-bottom: 160px;
-}
-
-.prototype h3{
-    margin-bottom: 70px;
-}
-.prototype p{
-    font-size: 22px;
-    margin-bottom: 110px;
-}
-
-.prototype h4{
-    margin-bottom: 15px;
-    font-family: 'LINESeedKR-Bd';
-}
-
-.prototype .gnb{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.prototype img{
-    width: 180px;
-    object-fit: cover;
-    margin-right: 50px;
-    margin-bottom: 70px;
-}
-
-
-
-.review{
-    background-color: #1A1818;
-    color: white;
-    height: 1200px;
-}
-
-.review .lower{
-    padding-top: 150px;
-    margin-left: 330px;
-    margin-bottom: 0;
-    word-break: keep-all;
-}
-.review .lower h3{
-    color: #2AF563;
-    margin-bottom: 30px;
-    margin-top: 150px;
-}
-.review .lower p{
-    font-family: 'LINESeedKR-Rg';
-    font-size: 22px;
-    width: 60%;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-main .veiw{
-    margin-top: 0;
-   height: 500px;
-   position: relative;
-   margin: auto;
-   padding-bottom: 40px;
-   background-color: #1A1818;
-}
-main .veiw h2{
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    border: solid 1px #2AF563;
-    border-radius: 50%;
+main .design .colors .container{
+    display: flex;
+    gap: 160px;
     margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 28px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: 1s;
+
 }
-main .veiw h2 a{
-    color: #2AF563;
-    display: block;
+main .design .colors .color{
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+main .design .colors .color1{
+    background-color: #F47721;
+}
+main .design .colors .color2 {
+    background-color: #979797;
+}
+main .design .colors .color3 {
+    background-color: #ffffff;
+    border: solid 1px #000;
+}
+main .design .colors .color ul{
     width: 100%;
     height: 100%;
+  
+    margin-top: 30px;
 }
-main .veiw h2:hover{
-    background-color: #2AF563;
+
+main .design .colors .container .color3{
+    color: black;
+}
+main .design .publishing{
+    margin-bottom: 200px;
+}
+main .design .publishing ul li{
+    list-style:square;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-family: 'LINESeedKR-Rg';
+    font-size: 24px;
+}
+
+main .problem{
+    background-color: #1A1818;
+    color: rgb(1, 1, 1);
+    word-break: keep-all;
+    
+}
+main .problem h2{
     color: #2AF563;
 }
-main .veiw h2:hover a{
-    color: #1A1818;
+main .problem>h2{
+    margin-left: 320px;
+    padding-top: 200px;
+    margin-bottom: 80px;
+}
+main .problem h3 {
+    margin-bottom: 20px;
+     color: rgba(255, 255, 255, 0.493);
+}
+main .problem h4{
+    color: white;
+    font-family: 'LINESeedKR-Rg';
+    line-height: 1.3;
+    font-size: 22px;
+    width: 790px;
+    word-break: keep-all;
 }
 
-/* 공통하단 */
+main .problem .problems1{
+    margin-left: 320px;
+    margin-bottom: 200px;
+}
 
+main .problem .problems2{
+    margin-left: 320px
+}
+main .problem .problems2 img{
+    margin-top: 20px;
+    width: 600px;
+    object-fit: cover;
+}
 
+main .problem .review {
+   margin-left: 320px;
+}
+
+main .problem .review>h2{
+    padding-top: 200px;
+    margin-bottom: 80px;
+}
+
+main .problem .review p{
+    width: 580px;
+    word-break: keep-all;
+    line-height: 1.7;
+    color: white;
+}
+main .problem .review p:nth-of-type(2){
+    margin-top: 10px;
+}
 
 
 main .introduce{
@@ -694,8 +487,6 @@ main .introduce ul li:nth-child(1) {
     line-height: 470px;
     border-top: #2AF563 1px solid;
     border-bottom: #2AF563 1px solid;
-
-
 }
 
 main .introduce ul li:nth-child(2),
@@ -716,6 +507,42 @@ main .introduce ul li:nth-child(4) {
 
 main .introduce ul li .new_type {
     font-family: 'LINESeedKR-Bd';
+}
+
+main .veiw{
+   
+   position: relative;
+   margin: auto;
+    padding-bottom: 400px;
+}
+main .veiw h2{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border: solid 1px #2AF563;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 28px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+}
+main .veiw h2 a{
+    color: #2AF563;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .veiw h2:hover{
+    background-color: #2AF563;
+    color: #2AF563;
+}
+main .veiw h2:hover a{
+    color: #1A1818;
 }
 
 footer {
