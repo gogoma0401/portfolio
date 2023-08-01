@@ -5,8 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=, initial-scale=1.0">
   <title>cosmo</title>
+   <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="./style.css">
   <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=3adbba35276041b412c4a766905afc18"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header>
@@ -140,29 +144,41 @@
         <li>과거와 현재, 미래를 아우르는 기업 코스모화학창업 이후 지금까지 계승되어 온 기업의 경영이념을 통해 도전과 열정으로 이룬 결실을 만들어냅니다.</li>
       </ul>
 
-      <ul class="card flex">
-        <li>
-          <span class="img-card"><img src="./images/2.png" alt="value"></span>
-          <p>가치경영</p>
-          <p>언제나 고객의 입장에서 생각하고 발전하는 기업이 되겠습니다.</p>
-        </li>
-        <li>
-          <span class="img-card"><img src="./images/3.png" alt="
-            responsibility"></span>
-          <p>책임경영</p>
-          <p>기업의 책임성을 다하고자 항상 생각하는 기업이 되겠습니다.</p>
-        </li>
-        <li>
-          <span class="img-card"><img src="./images/4.png" alt="open"></span>
-          <p>열린경영</p>
-          <p>고객에게 인정받는, 사랑받는 기업이 되기위해 항상 노력하겠습니다.</p>
-        </li>
-      </ul>
-      <div class="page">
-        <ul class="flex">
-          <li></li>
-          <li></li>
-        </ul>
+        <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <span class="img-card"><img src="./images/2.png" alt="value"></span>
+            <p>가치경영</p>
+            <p>언제나 고객의 입장에서 생각하고 발전하는 기업이 되겠습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <span class="img-card"><img src="./images/3.png" alt="responsibility"></span>
+            <p>책임경영</p>
+            <p>기업의 책임성을 다하고자 항상 생각하는 기업이 되겠습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <span class="img-card"><img src="./images/4.png" alt="open"></span>
+            <p>열린경영</p>
+            <p>고객에게 인정받는, 사랑받는 기업이 되기위해 항상 노력하겠습니다.</p>
+          </div>
+          <div class="swiper-slide">
+          <span class="img-card"><img src="./images/19.png" alt="innovation"></span>
+            <p>혁신경영</p>
+            <p>새로운 아이디어와 기술로 끊임없이 발전하고 혁신하는 기업이 되겠습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <span class="img-card"><img src="./images/17.png" alt="sustainability"></span>
+            <p>지속가능경영</p>
+            <p>환경, 사회, 경제적 측면에서 지속가능한 경영을 실천하는 기업이 되겠습니다.</p>
+          </div>
+          <div class="swiper-slide">
+            <span class="img-card"><img src="./images/18.png" alt="collaboration"></span>
+            <p>협력경영</p>
+            <p>파트너와 협력하여 상생하는 기업으로서 더 큰 가치를 창출하겠습니다.</p>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
   </article>
 
@@ -272,16 +288,7 @@
         <p>개인정보취급방침</p>
         <p>이메일</p>
       </li>
-
-      <li>
-        <span class="www"><a href="#">관련사이트<img src="./images/right2.png"></a> </span>
-        <ul class="site">
-          <li><a href="#">코스모화학</a></li>
-          <li><a href="#">코스모신소재</a></li>
-          <li><a href="#">주)코스모</a></li>
-        </ul>
-      </li>
-     
+    
     </ul>
   </footer>
   <script>
@@ -310,5 +317,25 @@
 		    map: map // 마커를 표시할 지도 객체
 		});
 	</script>
+  
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true, // 무한 루프
+    autoplay: {
+        delay: 3000, // 이미지 전환 간격 (3초)
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+  </script>
 </body>
 </html>

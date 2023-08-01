@@ -54,7 +54,7 @@ header {
     right: 0;
     margin: auto;
     background-color: white;
-    z-index: 999;
+    z-index: 9999;
 }
 
 header ul {
@@ -270,18 +270,7 @@ main .design .keyword ul{
 main .design .keyword ul li{
     font-size: 24px;
 }
-main .design .responsive{
-    width: 500px;
-}
-main .design .responsive ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-main .design .responsive ul li ul{
-    font-size: 20px;
-}
+
 
 main .design .colors .container{
     display: flex;
@@ -297,15 +286,13 @@ main .design .colors .color{
     text-align: center;
 }
 main .design .colors .color1{
-    background-color: #F47721;
+    background-color: #181871;
 }
 main .design .colors .color2 {
-    background-color: #979797;
+    background-color: #eeeeee;
+    color: black;
 }
-main .design .colors .color3 {
-    background-color: #ffffff;
-    border: solid 1px #000;
-}
+
 main .design .colors .color ul{
     width: 100%;
     height: 100%;

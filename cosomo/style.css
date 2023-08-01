@@ -33,6 +33,11 @@ header{
     z-index: 99;
 }
  
+button:hover{
+  border-radius: 30px;
+  transform: scale(1.1);
+  transition: 1s;
+}
 
  header .global-wrapper{
   margin: auto;
@@ -362,6 +367,11 @@ header{
     font-size: 18px;
   }
 
+   
+
+
+
+
   .management{
     width: 80%;
     margin: auto;
@@ -378,55 +388,45 @@ header{
     color: #121247;
     font-size: 40px;
   }
+
+
   .management .Philosophy li:nth-child(2){
     width: 700px;
     color: #121247;
     font-size: 20px;
   }
-  .management .card{
-    margin-top: 100px;
-    justify-content: space-between;
-    background-size: cover;
 
-  }
-  .management .card li{
-    width: 30.33333%;
-    background-color: #EEEEEE;
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-wrapper{
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-   
-  }
-  .management .card .img-card img{
-    width: 100%; height: cal(100%-70px);
-    background-size: cover;
-  }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-  .management .card li p{
-    width: 60%;
-    margin-left: 15px;
-    color: #121247;
-  }
-  .management .card li p:nth-of-type(1){
-    font-size: 28px;
-  }
- 
-  .management .card li p:nth-of-type(2){
-    font-size: 18px;
-  }
+    .swiper-slide p:nth-of-type(2){
+      word-wrap: keep-all;
+      width: 85%;
+      text-align: left;
+    }
+    
 
-  .management .page .flex{
-   justify-content: center;
-   gap: 5px;
-   margin: 100px auto;
-  }
-
-  .management .page li{
-    background-color: #121247;
-    width: 8px; height: 8px;
-    border-radius: 50%;
-  }
-  .management .page li:last-child{
-    background-color: white;
-  }
 
   .chemial{
     width: 80%;
@@ -545,7 +545,8 @@ header{
     margin-right: 40px;
   }
   .table li span img{
-    vertical-align:middle;
+    margin-top: 7px;
+    vertical-align:baseline;
     width: 20px;
     aspect-ratio: 1;
   }
@@ -627,7 +628,8 @@ header{
 
 footer{
   background-color: #555555;
-  height: 250px;
+  height: 240px;
+  position: relative;
 
 }
 footer .flex{
@@ -636,7 +638,7 @@ footer .flex{
   align-items: center
 }
 footer .flex li{
-  margin-top: 50px  ;
+  margin-top: 50px;
 }
 footer .flex p{
   color: white;
@@ -656,40 +658,4 @@ footer .flex .bar::after{
 footer .flex li:nth-child(3){
   position: relative;
 }
-
-footer .flex li:nth-child(4) .www{
-  height: 40px;
-}
-
-footer .flex li:nth-child(4) .www a{
- display: flex;
- align-items: center;
- justify-content: space-around;
- border: solid 1px white;
- color: white;
-  width: 160px; height: 40px;
-  white-space: nowrap;
-}
-footer .flex li:nth-child(4) .site{
-  display: none;
-}
-
-footer .flex li:nth-child(4) .site a{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: solid 1px white;
-  color: white;
-   width: 160px; height: 40px;
-   white-space: nowrap;
- }
-
- footer .flex li:nth-child(4):hover .site{
-  display: block;
- }
-
-footer .flex li:nth-child(4) img{
-  width: 16px; height: 16px;
-  transform: rotate(90deg);
-}
-
+  

@@ -331,6 +331,7 @@ main .arrow1{
 
   .animation div {
     font-size: 135px;
+    font-weight: 700;
     margin-bottom: 10px;
     opacity: 0;
     animation: fadeIn 3s ease-in-out forwards;
