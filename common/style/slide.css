@@ -1,10 +1,9 @@
-@charset 'utf-8';
+@charset "utf-8";
 
 .circleCarousel {
   height: 130vh;
   overflow: hidden;
   position: relative;
-  margin-bottom: 100px;
 }
 
 .won {
