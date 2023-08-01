@@ -14,6 +14,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
+    <!-- 화살표 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -46,7 +49,7 @@
     <script defer src="./index.js"></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="head">
             <img src="./images/logo.png" alt="로고" class="logo">
             <ul>
@@ -71,15 +74,16 @@
                     </span><span class="parallelogram parallelogram3"><video src="./images/video1.mp4" autoplay muted loop controls></video></span></span>GLORY</div>
                 <div class="intro_txt">SUWON FC 소식을 공유하며 다양한 이벤트와 활동을 소개합니다. 함께하면 즐거운 시간을 보내실 수 있습니다. 여러분의 관심과 애정을 기대합니다.</div>
                 <!-- svg -->
-                <div class="arrow1">
+
+                <div class="arrow1"><a href="#footer">
                 <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g id="&#240;&#159;&#166;&#134; icon &#34;arrow forward&#34;">
                         <path id="Vector"
                         d="M17.4165 7.91683L17.4165 25.6026L9.6898 17.876C9.0723 17.2585 8.05897 17.2585 7.44147 17.876C6.82397 18.4935 6.82397 19.491 7.44147 20.1085L17.8756 30.5426C18.4931 31.1601 19.4906 31.1601 20.1081 30.5426L30.5581 20.1243C31.1756 19.5068 31.1756 18.5093 30.5581 17.8918C29.9406 17.2743 28.9431 17.2743 28.3256 17.8918L20.5831 25.6026L20.5831 7.91683C20.5831 7.046 19.8706 6.3335 18.9998 6.3335C18.129 6.3335 17.4165 7.04599 17.4165 7.91683Z"
                         fill="black" />
                     </g>
-                </svg>
-            </div>
+                </svg></a>
+                </div>
             </div>
             
         </section>
@@ -107,7 +111,7 @@
               
 
 
-            <div class="btn">
+            <div class="btn" a href="footer">
                 <span class="txt"><a href="#">VIEW MORE</a></span>
                 <img src="./images/button.png">
             </div>
@@ -425,7 +429,7 @@
             </ul>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="foot">
             <div class="info">
                 <ul>
@@ -440,27 +444,32 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><img src="./images/arrow3.png"> WE ARE SUWOM FC</li>
-                    <li><img src="./images/arrow3.png">SPORTS TEAMS</li>
-                    <li><img src="./images/arrow3.png">OUR BUSINESS</li>
-                    <li><img src="./images/arrow3.png">SHOP</li>
+                    <li>WE ARE SUWOM FC</li>
+                    <li>SPORTS TEAMS</li>
+                    <li>OUR BUSINESS</li>
+                    <li>SHOP</li>
                 </ul>
                 <ul>
-                    <li><img src="./images/arrow3.png">MEDIA</li>
-                    <li><img src="./images/arrow3.png">WORK&PRESS</li>
-                    <li><img src="./images/arrow3.png">OUR BUSINESS</li>
+                    <li>MEDIA</li>
+                    <li>WORK&PRESS</li>
+                    <li>OUR BUSINESS</li>
                 </ul>
             </div>
         </div>
 
-      
+        <div class="arrow2"><a href="#header">
         <svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250" fill="none">
         <circle cx="125" cy="125" r="124.5" stroke="white"/>
         <path d="M126.584 136.083L126.584 118.397L134.31 126.124C134.928 126.742 135.941 126.742 136.559 126.124C137.176 125.507 137.176 124.509 136.559 123.892L126.124 113.457C125.507 112.84 124.509 112.84 123.892 113.457L113.442 123.876C112.824 124.493 112.824 125.491 113.442 126.108C114.059 126.726 115.057 126.726 115.674 126.108L123.417 118.397L123.417 136.083C123.417 136.954 124.129 137.667 125 137.667C125.871 137.667 126.584 136.954 126.584 136.083Z" fill="white"/>
         </svg>
+        </a>
+        </div>
 
         <div class="sns">
             <div class="copy">Copyright 2021ⓒ SUWONFC Research Instiute. All Right Reserved.</div>
+            <div class="site"><a href="../index.html">내 포트폴리오 바로가기<span class="material-symbols-outlined">
+arrow_forward_ios
+</span></a></div>
         </div>
     </footer>
 
