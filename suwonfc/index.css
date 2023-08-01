@@ -145,13 +145,11 @@ body{
 header{
     font-size: 15px;
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
 }
 header .head{
-    width: 93%;
+    gap: 1000px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 header .head .logo{

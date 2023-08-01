@@ -57,7 +57,7 @@ header {
     right: 0;
     margin: auto;
     background-color: white;
-    z-index: 9999;
+    z-index: 999;
 }
 
 header ul {
@@ -119,6 +119,9 @@ header ul li .gnb li::after {
 
 header ul li:nth-child(3):hover {
     background-color: black;
+}
+header ul li:nth-child(3):hover a{
+    color: white;
 }
 
 
