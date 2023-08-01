@@ -270,22 +270,8 @@ main .design .keyword ul{
 main .design .keyword ul li{
     font-size: 24px;
 }
-<<<<<<< HEAD
 
-=======
-main .design .responsive{
-    width: 500px;
-}
-main .design .responsive ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-main .design .responsive ul li ul{
-    font-size: 20px;
-}
->>>>>>> b124cd22a7d61e8bdd304cdecc90061a3bd3d618
+
 
 main .design .colors .container{
     display: flex;
@@ -301,7 +287,7 @@ main .design .colors .color{
     text-align: center;
 }
 main .design .colors .color1{
-<<<<<<< HEAD
+
     background-color: #181871;
 }
 main .design .colors .color2 {
@@ -309,17 +295,6 @@ main .design .colors .color2 {
     color: black;
 }
 
-=======
-    background-color: #F47721;
-}
-main .design .colors .color2 {
-    background-color: #979797;
-}
-main .design .colors .color3 {
-    background-color: #ffffff;
-    border: solid 1px #000;
-}
->>>>>>> b124cd22a7d61e8bdd304cdecc90061a3bd3d618
 main .design .colors .color ul{
     width: 100%;
     height: 100%;
